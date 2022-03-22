@@ -1,0 +1,2890 @@
+/***************************************/
+/* subpage_ pc */
+/***************************************/
+/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+.sub_body div#quick_menu { top: 204px; }
+
+/**** input 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 *****/
+input { margin:0; padding:0; border: 1px solid rgb(169, 169, 169); border-radius: 0; 
+-webkit-appearance:none; -moz-appearance:none; appearance:none;
+-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;
+} 
+
+TEXTAREA {  border: 1px solid rgb(169, 169, 169); 
+-webkit-appearance:none; -moz-appearance:none; appearance:none;
+-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;
+}  
+
+select {
+-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;
+}
+
+.input_border { border:0 !important; }
+#checkbox, #checkbox2, #checkbox3  { border:0 !important; }
+.job_search_inner input { border: 0 !important; }
+.job_search_inner input#searchKeyword, .job_search_inner .top_days { border: 1px solid rgb(169, 169, 169) !important; }
+input#bbs_sch_word { height: 19px; }
+input#searchMinSal, input#searchMaxSal { border: 1px solid rgb(169, 169, 169) !important; }
+
+/***** 占쎈쐻占쎈뼑占쎄땔占쎌굲筌∽옙 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 *****/
+input#bbs_sch_word { height: 30px; box-sizing: border-box; margin-left: 5px; margin-right: 5px; }
+.bbs_search_area select#bbs_sch_type { height: 30px; box-sizing:border-box; background: #fff; border: 1px solid rgb(169, 169, 169); }
+.bbs_search_area input { float: left; }
+input.bbs_search_btn { background: #666; display: block; padding: 5px 1px 4px 1px; float: right; border: 0 !important; }
+.bbs_search_area form a {
+    background: #666;
+    width: 28px;
+    height: 26px;
+    display: block;
+    padding: 4px 1px 0 1px;
+    float: right;
+}
+
+/***** 占쎈쐻占쎈솦�ⓦ끉�굲占쎈쐻占쎈짗占쎌굲 *****/
+
+div#mobile_tab { display: none; position: relative; height: 50px; background: #2452a7; }
+
+div#sub_page h2, .sub_paged h2 {
+    font-size: 20px;
+    font-family: 'notokr';
+    font-weight: 500;
+    color: #000;
+	text-align: left;
+	/*background:  url('/assets/img/sub/sub_bg_title.png') left 4px no-repeat;
+	padding-left: 29px;*/
+	line-height: 25px;
+	clear:both;
+}
+div#sub_page h3, .sub_paged h3 {
+    font-size: 17px;
+    font-family: 'notokr';
+    font-weight: 500;
+    color: #000;
+	text-align: left;
+	background: url(../img/sub_bg_title.png) left center no-repeat;
+	/*background: url(/assets/img/sub/sub_bg_title.png) left center no-repeat;*/
+	padding-left: 30px;
+	line-height: 25px;
+}
+
+div#sub_page h5, .sub_paged h5 {
+    font-family: 'notokr';
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    background: url(/assets/img/sub/sub_bg_title03.png) left center no-repeat;
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+.sub_page_contents { margin-bottom: 50px; }
+span.blue { color: #2452a7; }
+span.red { color: rgb(232, 0, 0); }
+
+.backred { background: #fff7f7; color: #ad3a3d; }
+.backblue { background: #f7fbff; color: #456bac; }
+
+/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+/***************************************/
+/*筌�議얜쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈뼍占쎈꺋占쎌굲*/
+/***************************************/
+/* 筌�議얜쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌쑕占쎈쐻�뜝占� introduce_greeting S */
+
+	.main_txt {
+		font-size: 30px;
+		line-height: 42px;
+		text-align: center;
+		margin-top: 35px;
+		padding-bottom: 55px;
+		margin-bottom: 25px;
+		color: #000;
+		position: relative;
+	}
+	.main_txt span {
+		font-size: 30px;
+		text-align: center;
+		color: #76a02d;
+		font-weight: 500;
+	}
+	.main_txt:after {
+		display: block;
+		content:"";
+		clear: both;
+		width: 27px;
+		height: 27px;
+	    background: url(/assets/img/sub/sub_pregent_img01.png) center no-repeat;
+		position: absolute; 
+		bottom:0;
+		left: 50%;
+		margin-left: -14px;
+	}
+
+	.fancybox img { width: 100%; display: block;}
+
+	.sub_txt { margin-bottom: 40px; }
+	.sub_txt > p {
+		text-align: center;
+		padding-bottom: 3px;
+		line-height: 26px;
+	}
+	.sub_txt > p.names {
+		color: #f68b1e;
+		font-size: 23px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+	.Announcement {
+		background: #f5f5f5; border: 1px solid #ccc; padding: 20px; text-align: center;
+	}
+	.Announcement p {
+		display: block; font-size: 18px; color: #000; 
+	}
+	.Announcement span {
+		display: block; font-size: 15px; color: #555; padding-top: 7px;
+	}
+
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲/占쎈쐻占쎈뼍占쎈꺋占쎌굲 introduce_inquire S */
+.inquire_inner {
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 40px 0;
+	overflow: hidden;
+}
+.inquire_inner > div {
+	width: 33.3333%;
+	float: left;
+	text-align: center;
+	border-left: 1px dashed #ccc;
+	box-sizing: border-box;
+}
+.inquire_inner > div.inq_01 {
+	border-left: 0;
+}
+.inquire_inner > div h4 {
+	font-size: 20px; 
+	color: #000;
+	padding: 15px 0;
+}
+.inquire_inner > div p {
+	color: #555;
+	line-height: 19px;
+	padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.inquire_gobtn {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.inquire_gobtn a {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background: #ccc;
+    margin: 0 5px;
+	color: #fff;
+}
+
+.inquire_gobtn a.real_btn { background: #f68b1e; }
+.inquire_gobtn a.qna_btn { background: #6d6d6d; }
+
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲/占쎈쐻占쎈뼍占쎈꺋占쎌굲 introduce_inquire F */
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뻻占쎈솇占쎌굲 占쎈쐻占쎈짗占쎌굲 introduce_map S */
+
+.map ul {
+	width: 100%;
+	overflow: hidden;
+    padding: 30px 30px 30px 155px;
+	margin-bottom: 15px;    
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+}
+.map .find_inner, .map_subway, .map_car { width: 100%; margin-top: 20px; }
+.map .find_inner ul { border-top: 2px solid #f68b1e; background: url(/assets/img/sub/sub_map_img01.png) 20px 30px no-repeat; }
+.map .map_subway ul { border-top: 2px solid #a4c23c; background: url(/assets/img/sub/sub_map_img02.png) 20px 30px no-repeat; }
+.map .map_car ul { border-top: 2px solid #075dc7; background: url(/assets/img/sub/sub_map_img03.png) 20px 30px no-repeat; }
+
+.map ul li { width: 100%; float: left; padding-bottom: 10px; }
+.map .map_car li { padding-bottom: 28px; }
+.map ul li span {
+    width: 20%;
+	display: inline-block;
+	padding: 6px;
+    color: #ffffff;
+	font-size: 14px;
+    font-weight: 500;
+	text-align: center;
+	background: #2452a7;
+    border-radius: 17px;
+    margin-right: 5%;
+
+}
+#map_traffic h3 { margin-top: 50px; }
+.map h4 { font-size:18px; line-height: 28px; }
+.map .find_inner h4 { color: #000; margin-bottom: 25px; }
+.map .map_subway h4 { color: #76a02d; margin-top: 10px; margin-bottom: 15px; }
+.map .map_car h4 { color: #075dc7; margin-top: 15px; margin-bottom: 15px; }
+
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뻻占쎈솇占쎌굲 占쎈쐻占쎈짗占쎌굲 introduce_map F */
+
+
+/***************************************/
+/*筌�議얜쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈뼩筌뚭쑴�굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲*/
+/***************************************/
+/* 占쎈쐻占쎈뻻占쎈닰占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲占쎈쐻占쎈짗占쎌굲 */
+.guidance h3 { margin-bottom: 17px; }
+.guidance > div img { border: 1px solid #ddd; }
+.fancybox-inner img { border: 1px solid #ddd; }
+#guid_02, #guid_03 { margin-top: 30px; }
+.guidance > div > p { margin-top: 5px; }
+.guid img { width: 100%; display: block; }
+
+.guidance .hm_tab { width: 100%; border-top: 2px solid #f68b1e; }
+.guidance .hm_tab th { background: #f9f9f9; color: #000; font-size: 15px; font-weight: 400; padding: 15px; border-left: 1px solid #ccc;  border-bottom: 1px solid #ccc; vertical-align: middle;  text-align: center;}
+.guidance .hm_tab th:first-child { border-left: 0; }
+.guidance .hm_tab td { font-size: 14px; font-weight: 400; color: #555555; padding: 10px 10px; border-bottom: 1px solid #ccc; vertical-align: middle; text-align: center;border-left: 1px solid #ccc; }
+.guidance .hm_tab td:first-child { border-left: 0; }
+.guidance .hm_tab td input { background: #f9f9f9; border: 1px solid #ddd; box-sizing: border-box; color: #555; height: 35px; line-height: 35px; padding: 0 15px; border-radius: 5px; margin-right: 7px;  }
+.guidance .hm_tab td span { font-size: 14px; color: #555;  }
+.guidance .hm_tab td select { border: 0; font-size: 14px; color: #555; font-weight: 500; }
+
+.guidance #guid_01 { margin-top: 40px; }
+
+
+/***************************************/
+/*筌�議얜쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲*/
+/***************************************/
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲/占쎈쐻占쎈짗占쎌굲占쎌끏占쎌녃占쎈쐻�뜝占� */
+.reat h3 { margin-bottom: 17px;  }
+.reat_inner {
+    width: 100%;
+    padding: 55px 25px 55px 155px;
+    border: 1px solid #ccc;
+    border-top: 2px solid #f68b1e;
+    box-sizing: border-box;
+	 background: url('/assets/img/sub/sub_rates_img01.png') 25px 15px no-repeat;
+	font-size: 18px;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+.reat_inner02 {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-top: 2px solid #f68b1e;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.reat_inner p, .reat_inner02 p {
+    padding-top: 10px;
+}
+.reat ul li {
+    font-size: 15px;
+    color: #555;
+    padding-bottom: 15px;
+}
+.reat ul li.star { 
+	color: #f68b1e;
+	font-weight: 500;
+}
+#user_guide { margin-top: 20px;}
+.reat .hm_tab { width: 100%; border-top: 2px solid #f68b1e; }
+.reat .hm_tab th { background: #f9f9f9; color: #000; font-size: 15px; font-weight: 400; padding: 15px; border-left: 1px solid #ccc;  border-bottom: 1px solid #ccc; vertical-align: middle;  text-align: center;}
+.reat .hm_tab th:first-child { border-left: 0; }
+.reat .hm_tab td { font-size: 14px; font-weight: 400; color: #555555; padding: 10px 10px; border-bottom: 1px solid #ccc; vertical-align: middle; text-align: center;border-left: 1px solid #ccc; }
+.reat .hm_tab td:first-child { border-left: 0; }
+.reat .hm_tab td input { background: #f9f9f9; border: 1px solid #ddd; box-sizing: border-box; color: #555; height: 35px; line-height: 35px; padding: 0 15px; border-radius: 5px; margin-right: 7px;  }
+.reat .hm_tab td span { font-size: 14px; color: #555;  }
+.reat .hm_tab td select { border: 0; font-size: 14px; color: #555; font-weight: 500; }
+th.ug_01 { width: 10%; }
+th.ug_02 { width: 30%; }
+th.ug_03 { width: 60%; }
+.sub_guide { background: #fff8f0; }
+
+/* 占쎈쐻占쎈뼄占쎈뻻�ⓦ끉�굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 reservation_rates S */
+
+.reats h3 {
+	margin-bottom: 17px;
+}
+.reats .hm_tab { width: 100%; border-top: 2px solid #f68b1e; }
+.reats .hm_tab th { background: #f9f9f9; color: #000; font-size: 15px; font-weight: 400; padding: 15px 30px; border-right: 1px solid #ccc;  border-bottom: 1px solid #ccc; width: 35%; vertical-align: middle; }
+.reats .hm_tab td { font-size: 14px; font-weight: 400; color: #555555; padding: 7px 10px; border-bottom: 1px solid #ccc; vertical-align: middle; }
+.reats .hm_tab td input { background: #f9f9f9; border: 1px solid #ddd; box-sizing: border-box; color: #555; height: 35px; line-height: 35px; padding: 0 15px; border-radius: 5px; margin-right: 7px;  }
+.reats .hm_tab td span { font-size: 14px; color: #555;  }
+.reats .hm_tab td select { border: 0; font-size: 14px; color: #555; font-weight: 500; }
+
+p.sub_reTxt { color: #777; font-size: 14px; line-height: 23px; margin-top: 20px; }
+p.sub_reTxt span { display: inline-block;color: #d70404; font-size: 14px; line-height: 23px; }
+
+
+.res_next_btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.res_next_btn div {
+    display: inline-block;
+    background: #f68b1e;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.res_next_btn div:hover{
+	cursor: pointer;
+}
+
+.confirm .hm_tab { width: 100%; border-top: 2px solid #f68b1e; }
+.confirm .hm_tab th { background: #f9f9f9; color: #000; font-size: 15px; font-weight: 400; padding: 15px; border-left: 1px solid #ccc;  border-bottom: 1px solid #ccc; vertical-align: middle;  text-align: center;}
+.confirm .hm_tab th:first-child { border-left: 0; }
+.confirm .hm_tab td { font-size: 14px; font-weight: 400; color: #555555; padding: 10px 10px; border-bottom: 1px solid #ccc; vertical-align: middle; text-align: center;border-left: 1px solid #ccc; }
+.confirm .hm_tab td:first-child { border-left: 0; }
+.confirm .hm_tab td input { background: #f9f9f9; border: 1px solid #ddd; box-sizing: border-box; color: #555; height: 35px; line-height: 35px; padding: 0 15px; border-radius: 5px; margin-right: 7px;  }
+.confirm .hm_tab td span { font-size: 14px; color: #555;  }
+.confirm .hm_tab td select { border: 0; font-size: 14px; color: #555; font-weight: 500; }
+
+
+.cht_01 { width: 10%; }
+.cht_02 { width: 22%; }
+ .cht_03 { width: 19%; }
+ .cht_04 { width: 19%; }
+.cht_05 { width: 30%; }
+
+ .cht_05 div { padding: 8px 15px; display: inline-block; margin: 0 3px; font-size: 13px; color: #fff; }
+.cht_05 div.ok { background: #f68b1e; }
+ .cht_05 div.no { background: #828282; }
+
+
+.cht_05 a { padding: 8px 15px; display: inline-block; margin: 0 3px; font-size: 13px; color: #fff; }
+.cht_05 a.ok { background: #f68b1e; }
+ .cht_05 a.no { background: #828282; }
+.confirm_search {
+	margin: 10px 0;  overflow: hidden; float: right; display: inline-block;
+}
+.confirm_search select {
+    float: left; border: 1px solid #ccc; width: 150px; height: 35px; line-height: 35px; margin-right: 5px;
+}
+.confirm_search input { 
+    float: left;
+    border: 1px solid #f68b1e;
+    background: #f68b1e;
+    color: #fff;
+    padding: 7px 15px;
+}
+.confirm .pageing {
+    overflow: hidden; text-align: center; width: 100%; margin-top: 40px;
+}
+.confirm .pageing ul {
+    display: inline-block;
+}
+
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼣繹먮씮�굲 2 */
+ th.cht_01 { width: 13%; }
+ th.cht_02 { width: 22%; }
+ th.cht_03 { width: 16%; }
+th.cht_04 { width: 19%; }
+
+td.cht_01 { background: #fff8f0; font-weight: 600;}
+td.cht_02 span {
+    display: block;
+    clear: both;
+    color: #fb7f00;
+    padding-top: 3px;
+    font-weight: 500;
+}
+.confirm2 h3{ margin-bottom: 17px; }
+.confirm2 h4 {
+    font-size: 16px;
+    font-family: 'notokr';
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    background: url(/assets/img/sub/sub_bg_title05.png) 5px 6px no-repeat;
+    padding-left: 25px;
+    line-height: 25px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.card-box {
+    width: 100%;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+	margin-bottom: 40px;
+}
+.card-box select {
+    width: 150px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	color: #555;
+}
+.confirm_card {
+    width: 100%;
+    text-align: center;
+}
+.confirm_card div {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #f68b1e;
+    color: #fff;
+	cursor: pointer;
+} 
+.confirm_card a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #f68b1e;
+    color: #fff;
+	cursor: pointer;
+} 
+.confirm_card a.o_card {
+	background: #989898;
+}
+.confirm_card div.o_card {
+	background: #989898;
+}
+span.confirmok_day {
+    text-align: center;
+    font-size: 17px;
+    color: #f68b1e;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 */
+.confirm_detail h3 { margin-bottom: 17px; }
+.confirm_detail > p { margin-bottom: 30px; }
+
+.confirm_detail .hm_tab th { width: 35%; text-align: left; padding: 15px 25px; }
+.confirm_detail .hm_tab td { width: 65%; text-align: left; padding: 15px 25px; }
+
+.cd_sec_02 h3 { margin-top: 30px;  }
+.confirm_detail .cd_sec_02 .hm_tab{ margin-bottom: 40px; }
+.confirm_detail .hm_tab td.cd_detail_phone { color: #025dc0; }
+.confirm_detail .hm_tab td.cd_detail_money span { color: red; }
+
+
+/* 占쎌넎占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲筌ｏ옙 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 */
+.c_refund h3 { margin-bottom : 17px; }
+.c_refund h4 {
+    font-size: 15px;
+    font-family: 'notokr';
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    background: url(/assets/img/sub/sub_bg_title05.png) 5px 5px no-repeat;
+    padding-left: 25px;
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.c_refund .hm_tab th { width: 28%; }
+.c_refund .cr_refund_inner2 .hm_tab td { text-align: left;  }
+.c_refund .cr_refund_inner2 .hm_tab td input { width: 100%;  }
+.c_refund .cr_refund_inner2 .hm_tab td textarea { width: 100%; border: 1px solid #ddd; background: #f9f9f9; box-sizing: border-box; color: #555; border-radius: 5px; padding: 15px; }
+
+.c_refund .confirm_card { margin-top:  40px;  }
+.confirm_card a.no_card { background: #898989; }
+
+
+
+div#res_click_map { position: relative; overflow-x: scroll; width: 100%; margin-top: 20px; border: 1px solid #ccc; box-sizing: border-box; }
+div#res_click_map > img {  width: 910px; position: relative; display:block;}
+div#res_click_map .click_inner div { position: absolute; width: 27px; height: 27px; text-align: center; line-height: 27px; font-size: 12px; color: #000; background: url('/img/real_time_check.png') 0 0 no-repeat; }
+
+
+div#res_click_map .click_inner div.cbtn_01 { top:200px; left: 257px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_02 { top:218px; left: 315px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_03 { top:211px; left: 363px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_04 { top:205px; left: 411px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_05 { top:127px; left: 410px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_06 { top:121px; left: 363px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_07 { top:114px; left: 316px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_08 { top:130px; left: 259px; background-position: 0px 0px; }
+
+div#res_click_map .click_inner div.cbtn_09 { top:210px; left: 585px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_10 { top:215px; left: 633px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_11 { top:220px; left: 679px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_12 { top:167px; left: 727px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_13 { top:113px; left: 684px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_14 { top:119px; left: 634px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_15 { top:126px; left: 588px; background-position: 0px 0px; }
+
+div#res_click_map .click_inner div.cbtn_16 { top:297px; left: 751px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_17 { top:262px; left: 790px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_18 { top:214px; left: 815px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_19 { top:159px; left: 822px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_20 { top:106px; left: 810px; background-position: 0px 0px; }
+
+div#res_click_map .click_inner div.cbtn_21 { top:278px; left: 195px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_22 { top:308px; left: 239px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_23 { top:317px; left: 289px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_24 { top:312px; left: 337px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_25 { top:305px; left: 387px; background-position: 0px 0px; }
+
+div#res_click_map .click_inner div.cbtn_26 { top:300px; left: 469px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_27 { top:300px; left: 516px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_28 { top:304px; left: 563px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_29 { top:308px; left: 612px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_30 { top:316px; left: 659px; background-position: 0px 0px; }
+
+
+div#res_click_map .click_inner div.cbtn_31 {top: 12px;left: 239px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_32 {top: 12px;left: 269px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_33 {top: 12px;left: 299px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_34 {top: 12px;left: 328px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_35 {top: 12px;left: 358px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_36 {top: 12px;left: 388px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_37 {top:12px;left: 417px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_38 {top:12px;left: 447px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_39 {top:12px;left: 477px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_40 {top:12px;left: 506px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_41 {top:12px;left: 536px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_42 {top:12px;left: 565px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_43 {top:12px;left: 595px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_44 {top:12px;left: 624px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_45 {top:12px;left: 654px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_46 {top:12px;left: 684px;background-position: 0px 0px;}
+div#res_click_map .click_inner div.cbtn_47 { top:12px; left: 713px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_48 { top:12px; left: 742px; background-position: 0px 0px; }
+div#res_click_map .click_inner div.cbtn_49 { top:12px; left: 772px; background-position: 0px 0px; }
+
+div.cbtn_01:hover{
+	cursor: pointer;
+}
+
+div.cbtn_02:hover{
+	cursor: pointer;
+}
+
+div.cbtn_03:hover{
+	cursor: pointer;
+}
+
+div.cbtn_04:hover{
+	cursor: pointer;
+}
+
+div.cbtn_05:hover{
+	cursor: pointer;
+}
+
+div.cbtn_06:hover{
+	cursor: pointer;
+}
+
+div.cbtn_07:hover{
+	cursor: pointer;
+}
+
+div.cbtn_08:hover{
+	cursor: pointer;
+}
+
+div.cbtn_09:hover{
+	cursor: pointer;
+}
+
+div.cbtn_10:hover{
+	cursor: pointer;
+}
+
+div.cbtn_11:hover{
+	cursor: pointer;
+}
+
+div.cbtn_12:hover{
+	cursor: pointer;
+}
+
+div.cbtn_13:hover{
+	cursor: pointer;
+}
+
+div.cbtn_14:hover{
+	cursor: pointer;
+}
+
+div.cbtn_15:hover{
+	cursor: pointer;
+}
+
+div.cbtn_16:hover{
+	cursor: pointer;
+}
+
+div.cbtn_17:hover{
+	cursor: pointer;
+}
+
+div.cbtn_18:hover{
+	cursor: pointer;
+}
+
+div.cbtn_19:hover{
+	cursor: pointer;
+}
+
+div.cbtn_20:hover{
+	cursor: pointer;
+}
+
+div.cbtn_21:hover{
+	cursor: pointer;
+}
+
+div.cbtn_22:hover{
+	cursor: pointer;
+}
+
+div.cbtn_23:hover{
+	cursor: pointer;
+}
+
+div.cbtn_24:hover{
+	cursor: pointer;
+}
+
+div.cbtn_25:hover{
+	cursor: pointer;
+}
+
+div.cbtn_26:hover{
+	cursor: pointer;
+}
+
+div.cbtn_27:hover{
+	cursor: pointer;
+}
+
+div.cbtn_28:hover{
+	cursor: pointer;
+}
+
+div.cbtn_29:hover{
+	cursor: pointer;
+}
+
+div.cbtn_30:hover{
+	cursor: pointer;
+}
+
+div.cbtn_31:hover{
+	cursor: pointer;
+}
+
+div.cbtn_32:hover{
+	cursor: pointer;
+}
+
+div.cbtn_33:hover{
+	cursor: pointer;
+}
+
+div.cbtn_34:hover{
+	cursor: pointer;
+}
+
+div.cbtn_35:hover{
+	cursor: pointer;
+}
+
+div.cbtn_36:hover{
+	cursor: pointer;
+}
+
+div.cbtn_37:hover{
+	cursor: pointer;
+}
+
+div.cbtn_38:hover{
+	cursor: pointer;
+}
+
+div.cbtn_39:hover{
+	cursor: pointer;
+}
+
+div.cbtn_40:hover{
+	cursor: pointer;
+}
+
+div.cbtn_41:hover{
+	cursor: pointer;
+}
+
+div.cbtn_42:hover{
+	cursor: pointer;
+}
+
+div.cbtn_43:hover{
+	cursor: pointer;
+}
+
+div.cbtn_44:hover{
+	cursor: pointer;
+}
+
+div.cbtn_45:hover{
+	cursor: pointer;
+}
+
+div.cbtn_46:hover{
+	cursor: pointer;
+}
+
+div.cbtn_47:hover{
+	cursor: pointer;
+}
+
+div.cbtn_48:hover{
+	cursor: pointer;
+}
+
+div.cbtn_49:hover{
+	cursor: pointer;
+}
+
+
+div#res_click_map .click_inner div.cbtn_Rwaiting { background-position: -148px 0px; text-indent: -9999px; }
+div#res_click_map .click_inner div.cbtn_Pcomplete { background-position: -111px 0px; text-indent: -9999px; }
+div#res_click_map .click_inner div.cbtn_Pwaiting { background-position: -74px 0px; text-indent: -9999px; }
+div#res_click_map .click_inner div.cbtn_clink { background-position: -37px 0px; color: #fff; }
+
+
+
+div#res_map_intro {
+    width: 100%;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-top: 2px solid #fa911e;
+    padding: 35px;
+	overflow: hidden;
+}
+.left_intro { float: left; width: 52%; margin-right: 3%; }
+.left_intro img { width:100%; max-width: 400px; }
+.right_intro { float: left; width: 45%; overflow: hidden; }
+.right_intro ul { width: 50%; float: left; }
+.right_intro ul li { width: 100%; padding-left: 42px; box-sizing: border-box; line-height: 27px; position: relative; margin-bottom: 15px;}
+.right_intro ul li.rmi_01:before { width:27px; height: 27px; display: block; content:""; clear: both; background: url('/img/real_time_check.png') 0 0 no-repeat; position: absolute; top:0; left:0; }
+.right_intro ul li.rmi_02:before { width:27px; height: 27px; display: block; content:""; clear: both; background: url('/img/real_time_check.png') 0 0 no-repeat; position: absolute; top:0; left:0; background-position: -37px 0px; }
+.right_intro ul li.rmi_03:before { width:27px; height: 27px; display: block; content:""; clear: both; background: url('/img/real_time_check.png') 0 0 no-repeat; position: absolute; top:0; left:0; background-position: -74px 0px; }
+.right_intro ul li.rmi_04:before { width:27px; height: 27px; display: block; content:""; clear: both; background: url('/img/real_time_check.png') 0 0 no-repeat; position: absolute; top:0; left:0; background-position: -111px 0px }
+.right_intro ul li.rmi_05:before { width:27px; height: 27px; display: block; content:""; clear: both; background: url('/img/real_time_check.png') 0 0 no-repeat; position: absolute; top:0; left:0; background-position: -148px 0px}
+
+
+
+/* 占쎌넎占쎈쐻占쏙옙繹먮씮�굲占쎈쐻占쎈짗占쎌굲 */
+.refund_rule h3 { margin-bottom: 17px; }
+.refund_rule .hm_tab { width: 100%; border-top: 2px solid #f68b1e; }
+.refund_rule .hm_tab th { background: #f9f9f9; color: #000; font-size: 15px; font-weight: 400; padding: 15px; border-left: 1px solid #ccc;  border-bottom: 1px solid #ccc; vertical-align: middle;  text-align: center;}
+.refund_rule .hm_tab th:first-child { border-left: 0; }
+.refund_rule .hm_tab td { font-size: 14px; font-weight: 400; color: #555555; padding: 15px 10px; border-bottom: 1px solid #ccc; vertical-align: middle; text-align: center; border-left: 1px solid #ccc; }
+.refund_rule .hm_tab td:first-child { border-left: 0; }
+.refund_rule .hm_tab .second_td td:first-child { border-left: 1px solid #ccc; }
+.refund_rule .hm_tab td span { font-size: 14px; color: #555;  }
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼄占쎄땔占쎌굲占쎈쐻占쎈짗占쎌굲 */
+.caution > p {
+    font-size: 18px; line-height: 18px; color: #000; margin: 30px 0 35px 0; font-weight:500;
+}
+.caution > p span {
+    font-size: 17px; color: #f68b1e; font-weight: 500;
+}
+
+.caution ul li {
+	font-size: 16px; color: #555; width: 100%; box-sizing: border-box; padding-top: 3px; padding-bottom: 35px; padding-left: 60px; 
+    background: url('/assets/img/sub/sub_caution_img01.png') 20px 0 no-repeat;
+}
+.caution ul li p {
+	font-size: 15px; color: #555555; line-height: 28px; padding-top: 15px;
+}
+
+/***************************************/
+/*50+占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲*/
+/***************************************/
+/* 50+占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 */
+.me_left_content { width: 66%; max-width: 595px; float: left; }
+.me_left_content .me_top { position: relative; }
+.me_left_content .me_top p { position: absolute; top: 28px; left: 0; width: 100%; }
+.me_left_content .me_top p span {
+    font-size: 25px;
+    color: #2452a7;
+    display: block;
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-family: 'notokr';
+}
+.me_left_content >  .me_top > img { padding-top: 75px; display: block; }
+.mainjob .me_left_content >  .me_top > img { padding-top: 103px; }
+.mainjob h5, .mainedu h5 { background: none !important; }
+
+
+span.me_ttext { padding-top: 3px !important; }
+ul.me_top_box01 { position: absolute; right: 0; top: 60px; }
+ul.me_top_box01 li { float: right; margin-left: 10px; margin-bottom: 10px; }
+li.me_clear { clear: both; }
+ul.me_top_box01 li a {
+    display: block;
+    background: #f4f4f4;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	width: 91px;
+	height: 91px;	
+}
+ul.me_top_box01 li a img { margin: 0 auto; display: block; padding-top: 12px; }
+ul.me_top_box01 li a span {
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    line-height: 15px;
+    font-family: 'notokr';
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+
+
+.me_table { border-top: 2px solid #2452a7; border-bottom: 1px solid #ccc; padding-bottom: 20px; min-height: 285px; }
+.me_table h4 {
+    font-size: 18px;
+    color: #000 !important;
+    font-family: 'notokr';
+    font-weight: 500;
+    padding-left: 10px;
+    height: 53px;
+    line-height: 53px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.me_table h4 span { 
+    float: right;
+    margin-top: 15px;
+	margin-right: 10px; 
+}
+.me_table h4 span a {
+    font-size: 11px;
+    color: #6b6b6b;
+    border: 1px solid #ccc;
+    padding: 4px 7px;
+}
+ul.me_list_first > li:first-child { margin: 0 90px 0 0 !important; padding-top: 0 !important; }
+
+.me_table .board_list li { padding:16px 10px; }
+.me_table .board_list li a { color: #676767; font-size: 14px; }
+.me_table .board_list li .date { color: #999999; font-size: 11px; }
+
+.me_right_content {
+    width: 33%;
+    float: right;
+    max-width: 293px;
+}
+.mrc_inr { background: #f2f2f2; padding: 33px 10px; min-height: 368px; }
+.mrc_inr ul li { padding: 0 5px; clear : both; overflow: hidden;}
+.mrc_inr h4 { font-size: 18px; color: #000 !important; font-family: 'notokr'; font-weight: 500; height: 24px; line-height: 24px; margin-bottom: 3px; padding-left: 5px; }
+.mrc_inr h4 span { float: right; margin-right: 5px; }
+.mrc_inr h4 span a { font-size: 11px; color: #6b6b6b; border: 1px solid #ccc; padding: 4px 7px; }
+.mrc_inr .comp_con { margin-top: 25px; }
+.mrc_inr .comp_con p { color: #797979; font-size: 13px; margin-left: 0; }
+.mrc_inr .comp_con span { color: #999999; font-size: 12px; display: block; padding-top: 16px; }
+.mrc_inr .comp_con img { width: 121px; height: 89px; }
+
+.mrc_banner { margin-top: 21px; border: 1px solid #ccc; }
+.mrc_banner ul li { width: 100%; background: #fbfbfb; }
+.mrc_banner ul li a { display: block; overflow: hidden;}
+.mrc_banner ul li a img { float: left; padding: 14px 15px; }
+.mrc_banner h5 { color: #393939; font-size: 17px; font-family: 'notokr'; font-weight: 400; padding-top: 23px; }
+.mrc_banner ul li a p { font-size: 13px; padding-top: 5px; margin-right: 25px; }
+.mrc_banner .fir_btn { border-bottom: 1px dotted #ccc; }
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 */
+
+
+.mainjob .me_top_box01 { top: 163px; }
+span.title_lit { font-size: 20px !important; color: #555 !important; font-weight: 300 !important; float: left; margin-right: 5px; }
+.mainjob .mrc_inr .board_list li { margin: 0 5px; padding: 16px 0; }
+.mainjob .mrc_inr .board_list li a { font-size: 13px; }
+.mainjob .mrc_inr .board_list .me_list_first { margin: 0 5px !important; padding-top: 0 !important; }
+.mainjob .mrc_inr { min-height: 259px; }
+
+span.main_edu_notice {
+    display: block;
+    background: #f9f9f9;
+    border: #ccc;
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 2%;
+}
+
+.mainedu .in_mo_list_content01 { margin-top: 4%; }
+.mainedu .in_mo_ydt { text-align: right; margin: 25px 0 10px 0; overflow: hidden; }
+.mainedu .in_mo_ydt a { display: block; float: left; }
+.mainedu .in_mo_ydt span { float: left; font-size: 1.4em; }
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 */
+.curriculum .civil_txt { padding-top: 0 !important; margin-bottom: 10px; }
+.curriculum .civil_txt p { background:  url('/assets/img/sub/sub_bg_title04.png') left 8px no-repeat; padding-left: 10px; }
+
+.ed_cu_content { width: 100%; float: left; }
+.ed_cu_content ul li { width: 49%; float: left; margin-right:2%; margin-bottom: 30px;}
+.ed_cu_content ul li a { display: inline-block; }
+
+.ed_cu_content ul .sec { margin-right:0 !important; }
+.ed_cu_content ul li dt {
+    background: #005ea5;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 124px;
+    height: 124px;
+    line-height: 124px;
+    border-radius: 65px;
+    float: left;
+	position: relative;
+}
+.ed_cu_content ul li .gray { background: #888888 !important; }
+.ed_cu_content ul li .wblue { background: #428ec8 !important; }
+.ed_cu_content ul li dt img {
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    z-index: -1;
+    right: -32px;
+}
+.ed_cu_img01_mobile { display: none; }
+.ed_cu_content ul li dd {
+    width: 58%;
+    float: left;
+    padding: 5% 4%;
+    border: 1px solid #ccc;
+    margin-left: 4%;
+    margin-top: 2%;
+	position: relative;
+	z-index:-2;
+    letter-spacing: -0.6px;
+    height: 80px;
+    display: table;
+}
+.ed_cu_content ul li dd span { display: table-cell; vertical-align: middle; }
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲 */
+.ed_or_tab a { padding: 0px 11px !important; }
+.ed_or_tab a.active { padding-bottom: 1px !important; }
+
+/* list */
+span.ed_or_recruitment {
+    display: inline-block;
+    border: 1px solid #2452a7;
+    padding: 4px 7px 4px 7px;
+    background: #2452a7;
+    line-height: 18px;
+    font-size: 13px;
+    min-width: 30px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+}
+span.ed_or_deadline {
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: #ececec;
+    line-height: 18px;
+    font-size: 13px;
+    min-width: 30px;
+    text-align: center;
+    color: #555;
+    vertical-align: middle;
+    padding: 4px 10px 4px 10px;
+}
+
+.eo01 { width: 15%; }
+.eo02 { width: 6%; }
+.eo03 { width: 6%; }
+.eo04 { width: 5%; }
+.eo05 { width: 8%; }
+.eo06 { width: 5%; }
+
+.me01 { width: 5%; }
+.me02 { width: 30%; }
+.me03 { width: 10%; }
+.me04 { width: 8%; }
+.me05 { width: 7%; }
+.me06 { width: 7%; }
+
+.mj01 { width: 5%; }
+.mj02 { width: 10%; }
+.mj03 { width: 20%; }
+.mj04 { width: 8%; }
+.mj05 { width: 7%; }
+.mj06 { width: 7%; }
+
+.lc01 { width: 9%; }
+.lc02 { width: 44%; }
+.lc03 { width: 15%; }
+.lc04 { width: 9%; }
+.lc05 { width: 14%; }
+.lc06 { width: 9%; }
+
+/*view*/
+.ed_or_title {
+    float: left;
+    border-top: 2px solid #4c4f55;
+    /*border-bottom: 1px solid #848992;*/
+    width: 100%;
+}
+.ed_or_title h4 {
+    float: left;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+	position: relative; 
+    background: #f7f7f7;
+    border-bottom: 1px solid #757c86;
+}
+.ed_or_title h4 span {
+    display: block;
+    font-weight: 600;
+    color: #000;
+    padding: 12px 10px 12px 10px;
+}
+span.ed_or_veiw {
+    float: left;
+    background: #f7f7f7 !important;
+    border: none !important;
+    color: #343434 !important;
+    border: 1px solid #ccc !important;
+    box-sizing: border-box;
+    font-weight: 300 !important;
+    font-size: 12px;
+    padding: 7px !important;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    right: 10px;
+}
+
+.ed_or_contents01 { float: left; width: 100%; margin-top:30px; }
+.ed_or_contents01 .in_us_table { margin-top: 15px; margin-bottom: 0; }
+.ed_or_study p { margin-top: 10px; }
+.order .bbs_bottom_wrap { border-top: 1px solid #ccc; padding-top: 30px; margin-top: 50px; }
+.order .bt_right a:first-child { background: #2452a7; }
+.order table { border-top: 1px solid #2452a7; }
+.order_write table .table_hundred { width: 99%; }
+
+.ed_or_write .ed_or_contents01 { margin-bottom: 50px; margin-top: 0; }
+
+/*占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뻼繹먮씮�굲*/
+/* list */
+.review_list {
+    border-bottom: 1px solid #ccc;
+    border-top: #4c4f55 2px solid;
+    line-height: 20px;
+    float: left;
+    width: 100%;
+    margin-top: 14px;
+}
+.review_list ul li {
+	/*background:  url('/assets/img/sub/td_bg01.png') 0 0 repeat-x;*/
+	border-top: 1px dashed #ccc;
+    padding: 30px 0;
+    width: 100%;
+    float: left;
+}
+.review_list ul li:first-child {
+	/*background:  url() !important;*/
+	border-top: 0 !important;
+}
+
+.review_list dl dt {
+    width: 25%;
+	min-width: 130px;
+	height:auto;
+    float: left;
+    overflow: hidden;
+    margin-right: 4%;
+}
+.review_list dl dt img { width: 100%; height: auto; }
+.review_list dl dd {
+    width: 70%;
+    height:auto;
+	max-height: 140px;
+    float: left;
+    /*overflow: hidden;*/
+	position: relative;
+}
+.review_list ul li h6 {
+    font-size: 16px;
+    color: #555555;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	margin-bottom:10px;
+}
+.review_list ul li h6 a {
+    color: #000;
+	font-family: 'notokr';
+    font-weight: 400;
+    font-size: 20px;
+}
+.review_list ul li h6 a:hover {
+    color: #2452a7;
+    text-decoration: underline;
+}
+
+.review_list ul li .ed_re_info {
+    display: inline-block;
+	/*margin-top: 5px;*/
+}
+.review_list em {
+    font-style: normal;
+    font-size: 14px;
+    color: #fb8b22;
+    padding-right: 10px;
+    margin-right: 10px;
+	/*background:  url('/assets/img/sub/cline_bg01.png') right 50% no-repeat;*/
+}
+
+.review_list ul li .ed_re_news { margin-top: 10px;  }
+.review_list ul li .ed_re_news a { color: #9e9e9e; }
+.review_list ul li .ed_re_news a:hover { text-decoration: underline; text-overflow: ellipsis; overflow: hidden; }
+
+.review_write table .table_hundred { width: 99%; }
+
+.review_list ul li .ed_re_sub { margin-top: 10px; }
+.review_list ul li .ed_re_sub a:hover { text-decoration: underline; text-overflow: ellipsis; overflow: hidden; }
+
+
+.catalog_list {
+    border-bottom: 1px solid #2452a7;
+    border-top: 2px solid #2452a7;
+    line-height: 20px;
+    float: left;
+    width: 100%;
+    margin-top: 14px;
+}
+.catalog_list ul li {
+	/*background:  url('/assets/img/sub/td_bg01.png') 0 0 repeat-x;*/
+	border-top: 1px dashed #ccc;
+    padding: 30px 0;
+    width: 50%;
+    float: left;
+}
+.catalog_list ul li:first-child, .catalog_list ul li:nth-child(2) {
+	/*background:  url() !important;*/
+	border-top: 0 !important;
+}
+
+.catalog_list dl dt {
+    width: 14%;
+	min-width: 130px;
+	height:auto;
+    float: left;
+    overflow: hidden;
+    margin-right: 4%;
+}
+.catalog_list dl dt img { width: 100%; height: auto; }
+.catalog_list dl dd {
+    width: 66%;
+    height:auto;
+	max-height: 140px;
+    float: left;
+    /*overflow: hidden;*/
+	position: relative;
+}
+.catalog_list ul li h6 {
+    font-size: 16px;
+    color: #555555;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	margin-bottom:10px;
+}
+.catalog_list ul li h6 a {
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+}
+.catalog_list ul li h6 a:hover {
+    color: #2452a7;
+    text-decoration: underline;
+}
+
+.catalog_list ul li .ed_re_info {
+    display: inline-block;
+	/*margin-top: 5px;*/
+}
+.catalog_list em {
+    font-style: normal;
+    font-size: 14px;
+    color: #2452a7;
+    padding-right: 10px;
+    margin-right: 10px;
+	/*background:  url('/assets/img/sub/cline_bg01.png') right 50% no-repeat;*/
+}
+
+.catalog_list ul li .ed_re_news { margin-top: 15px; }
+.catalog_list ul li .ed_re_news a:hover { text-decoration: underline; text-overflow: ellipsis; overflow: hidden; }
+.journal .catalog_list ul li .ed_re_news a {
+    display: inline-block;
+    background: #fff;
+    padding: 10px 0;
+    width: 112px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.journal .catalog_list ul li dl dt img { border: 1px solid #ddd; box-sizing: border-box; }
+.journal .catalog_list ul li .ed_re_news a:hover {
+    background: #2452a7;
+    border: 1px solid #2452a7;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
+/* 占쏙옙占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 */
+.ed_gu_contents01 { float: left; margin-bottom: 50px; }
+.ed_gu_contents01 h2 { margin-bottom: 30px;     margin-top: 0 !important; }
+.ed_gu_contents01 ul li { float: left; width: 25%; margin-bottom: 1%; 
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.ed_gu_contents01 ul li a { display: block; text-align: center; }
+.ed_gu_contents01 ul li a img { width: 100%; display: inline-block; max-width: 219px; border: 1px solid #ccc; box-sizing: border-box; max-height: 72px; }
+
+.ed_gu_contents02 { float: left; margin-bottom: 50px; }
+.ed_gu_contents02 h2 { margin-bottom: 30px; }
+.ed_gu_contents02 ul li { float: left; width: 25%; margin-bottom: 1%; 
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.ed_gu_contents02 ul li a { display: block; text-align: center; }
+.ed_gu_contents02 ul li a img { width: 100%; display: inline-block; max-width: 219px; border: 1px solid #ccc; box-sizing: border-box; }
+
+/***************************************/
+/*50+占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲*/
+/***************************************/
+
+/*占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼣占쎈뼏占쎄땔占쎌굲占쎈쐻�뜝占�*/
+
+img.job_process { width: 100%; max-width: 908px; display: block; margin: 0 auto; }
+img.job_process2 { display: none; }
+
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� */
+.incon_ex {
+    float: left;
+    width: 100%;
+    border: 1px solid #Ccc;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+	margin-bottom: 25px;
+}
+.incon_ex ul {
+    display: inline-block;
+}
+.incon_ex ul li {
+    float: left;
+    padding: 0 8px;
+    display: inline-block;
+}
+.incon_ex ul li img {
+    position: relative;
+    top: 3px;
+    margin-right: 4px;
+}
+.gojob .civil_txt, .gojob_view .civil_txt { padding: 0 0 30px 0; }
+a.login_btn {
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: #2452a7;
+    color: #fff;
+    font-size: 13px;
+    margin-left: 10px;
+}
+a.job_gojob_down {
+    display: inline-block;
+    background: #2452a7;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 4px;
+    margin-left: 35px;
+}
+
+/***************************************/
+/*50+占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲*/
+/***************************************/
+
+/* 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌넞占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈뼍占쎈꺋占쎌굲 */
+
+.behavior h2 { margin-bottom: 30px; }
+.behavior h3 { margin-top: 30px; margin-bottom: 20px; }
+
+.so_be_explanation { border: 1px solid #ccc; border-top: 2px solid #2452a7; padding: 0 0 0 30px;  background: #fbfbfb; position: relative;}
+.so_be_explanation:after{content:""; clear:both; display:block}
+.so_be_explanation::before { background: #21b6f4; content:""; width: 185px; height: 2px; position: absolute; top:-2px; left:30px;} 
+.so_be_explanation .so_be_left { width: 52%; float: left; padding-top: 30px;}
+.so_be_explanation .so_be_left h4 {
+    font-size: 25px;
+    font-family: 'notokr';
+    font-weight: 500;
+    color: #2452a7;
+    margin-bottom: 22px;
+}
+.so_be_explanation .so_be_left span { font-size: 14px; margin-bottom: 22px; display: block; }
+.so_be_explanation .so_be_left p { font-size: 14px; color: #000; padding-top: 22px; background:  url('/assets/img/sub/so_be_img03.png') left top no-repeat; }
+.so_be_explanation .so_be_right { float: right; }
+.so_be_explanation .so_be_right img { display: block; }
+
+.behavior table.in_us_table td { line-height: 27px; }
+.behavior .in_us_table .blue {
+    display: block;
+    font-family: 'notokr';
+    font-weight: 500;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+.behavior .in_us_table .sp_fir { padding-top:0; }
+.behavior  table.in_us_table { margin-bottom: 0; border-collapse: separate; }
+
+.info_write table .table_hundred { width: 99%; }
+
+.so_be_content01, .so_be_content02 { float: left; width: 100%; }
+
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌돴 */
+
+p.alignC { text-align: center; }
+.MAT10 { margin-top: 10px !important; }
+.MAT5 { margin-top: 8px !important; line-height: 27px; }
+.MAR5 { margin-right: 10px !important; }
+.MAL60 { margin-left: 89px !important; }
+
+
+span.state01 {
+    display: inline-block;
+    border: 1px solid #0c3788;
+    padding: 4px 7px 4px 7px;
+    background: #2452a7;
+    line-height: 18px;
+    font-size: 13px;
+    min-width: 64px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+	border-radius: 15px;
+}
+
+.behavior .so_be_content02 .in_us_table th { border-left: 1px solid #dfe2e7; border-bottom: 1px #dfe2e7 dashed; }
+.behavior .so_be_content02 .in_us_table th:first-child { border-left: 0; }
+.behavior .so_be_content02 .in_us_table td { border-left: 1px solid #dfe2e7; text-align: center;}
+.behavior .so_be_content02 .in_us_table td:first-child { border-left: 0; }
+td.so_be_leftet { text-align: left !important; }
+span.so_be_fighting { font-family: 'notokr'; font-weight: 400; color: #000; }
+
+
+/* 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌넞占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 */
+
+.service .so_be_right img { margin: 16px 60px 0 0; }
+.info .job_search_inner { padding: 12px 24px 0 24px; }
+.info .job_search li div input[type="text"] { height: 28px; } 
+span.so_in_pad { font-size: 13px; }
+.civil_txt.so_in_view { padding: 0 0 30px 0; }
+.ed_or_contents01 p { margin-top: 15px; }
+.ed_or_contents01 p img{ max-width: 100%; }
+
+input#searchMinSal, input#searchMaxSal { text-align: center; }
+
+.society_keword select#searchWorkType { float: left; }
+.society_keword input#searchKeyword { float: left; margin-left: 2%; width: 72%; }
+.jobbiz_03 .society_keword input#searchKeyword { margin-left: 0; }
+
+input.bbs_file_btn {
+    background: #efefef;
+    padding: 5px 10px !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 !important;
+    height: 30px !important;
+}
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈뼍占쎈꺋占쎌굲 */
+
+
+
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 */
+
+
+/***************************************/
+/*50+占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲*/
+/***************************************/
+
+/* 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� */
+
+/* list */
+.event .job_search li div input[type="text"] { height: 28px; }
+.event .job_search_inner { padding: 12px 24px 0 24px; margin-top: 30px; }
+.job .job_search_inner { padding: 12px 24px 0 24px; }
+
+.event .list_view { float: left; margin-top: 10px; width: 100%; }
+.event .list_view dl { width: 50%; height: 228px; float: left; position: relative; margin-bottom: 30px; padding-bottom:30px; border-bottom: 1px dashed #ccc; }
+
+dl.not_file { border-bottom: none !important; height: auto !important; }
+dl.not_file dt { width: 100% !important; margin-right: 0 !important; }
+dl.li_ev_bonone { padding-bottom: 0 !important; border: 0 !important; }
+.event .list_view dl dt { float: left; width:35%; height: auto; overflow: hidden; margin-right:15px; } 
+.event .list_view dl dt img { width: 100%; /*height: 228px; height: auto;*/height: 120px;} 
+.event .list_view dl dd { float: left; width:53%; }
+/*.event .list_view dl dd.li_en_list_subject { font-size: 16px; color: #000;  }*/
+.event .list_view dl dd.li_en_list_subject a { color: #000; font-size: 16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; display: block; }
+.event .list_view dl dd.li_en_list_subject a  span{ color: #2452a7; font-size: 16px; }
+.event .list_view dl dd.li_en_list_place { position: absolute; top:28px; left:35%; margin-left: 15px; line-height: 25px; }
+.event .list_view dl dd.li_en_list_place p { white-space : nowrap; text-overflow: ellipsis; overflow: hidden; margin-top:11px; }
+.event .list_view dl dd.li_en_list_place p em { display: inline-block; border- 1px solid #cccccc; padding: 4px 7px; border: 1px solid #ccc; background: #ececec; line-height: 17px; font-size: 12px; min-width: 45px; text-align: center; margin-right: 5px; letter-spacing: -0.050em; font-style: normal; }
+
+.event .bbs_bottom_wrap { border-top: 1px solid #ccc; padding-top: 30px; }
+
+.li_ev_tab a { padding: 0 14px !important; }
+.li_ev_tab a.active { padding-bottom: 1px !important; }
+
+.event input.table_hundred { width: 99% !important; }
+.jobbiz_03 input.table_hundred { width: 99% !important; }
+.job input.table_hundred { width: 99% !important;}
+.job_search input.table_hundred { width: 99% !important; }
+
+/* view */
+.li_ev_content01 { float: left; margin-top: 30px; width: 100%; padding: 3%; border: 1px solid #ccc; background: #fbfbfb; box-sizing: border-box; }
+.li_ev_content01 dl dt { width: 29%; float: left; max-width:240px; }
+.li_ev_content01 dl dt img { width: 100%; /*height: 320px;height: auto;*/height: auto; }
+.li_ev_content01 dl dd { float: left; width: 66%;margin-left: 5%; }
+.li_ev_content01 dl dd h4 { font-size: 24px; color: #000; line-height: 30px; padding-bottom: 18px; border-bottom: 1px dashed #ccc; font-family: 'notokr'; font-weight: 500; }
+.li_ev_content01 dl dd .li_ev_place { margin-top: 10px; }
+.li_ev_content01 dl dd p { line-height: 38px; }
+.li_ev_content01 dl dd p span {
+    background: url(/assets/img/sub/ico_job.gif) left 9px no-repeat;
+    padding-left: 11px;
+    width: 70px;
+    display: inline-block;
+    font-family: 'notokr';
+    font-weight: 400;
+}
+
+p.li_ev_fin { font-size: 13px; border-top: 1px solid #ccc;  line-height: 20px !important; padding-top: 10px; }
+
+.li_ev_content02 { float: left; margin-top: 30px; width:100%; }
+.li_ev_content02 h3 { margin-bottom: 20px; }
+.li_ev_content02 p { width: 98%; padding: 0 1%; }
+
+span.li_ev_care {
+    width: 100%;
+    margin-top: 50px;
+    display: block;
+    text-align: left;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    font-size: 13px;
+    padding: 5px;
+}
+
+
+
+/***************************************/
+/* 占쎌돳占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 */
+/***************************************/
+
+.my_pe_content01 { width: 100%; float: left; }
+.my_pe_content01_inr { padding: 25px 20px; border: 1px solid #ccc; background: #fbfbfb; }
+.my_pe_content01_inr p { line-height: 23px; }
+h3.h3Bl { margin: 40px 0 10px; }
+
+.h3Section { margin: 0 0 0 25px; }
+.h3Section p { line-height: 26px; padding-bottom: 10px; }
+.h3Section ol li, .h3Section ul li { line-height: 26px; }
+
+.colorBlack { color: #000; font-family: 'notokr'; font-weight: 400; }
+.colorBlue { color: #2452a7; font-weight: bold; }
+
+.arrowBl:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: 5px;
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent #2452a7;
+}
+
+table.in_us_table td { border-left: 1px solid #dfe2e7; }
+table.in_us_table td:first-child { border-left: 0 !important; }
+
+.person .img01 {
+    width: 100%;
+    max-width: 693px;
+    margin: 30px auto 30px;
+    display: block;
+}
+
+.person .img02 { display: none; }
+
+.terms h2 { margin-top: 40px; }
+.terms h2:first-child { margin-top: 0; }
+.terms h3 { margin-top: 30px; }
+.h3Section ul li ul, .h3Section ol li ol { padding-left: 20px; margin: 10px 0; }
+
+.mt_pe_table_mobile { display: none; }
+
+
+/***** site map *****/
+.sites { width: 100%; float: left; }
+ul.first_content { float: left; width: 100%; margin-bottom: 50px; }
+.sites > ul > li { width: 30%; display: inline-block; margin-left: 4%; margin-bottom: 30px; vertical-align: top;
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.sites ul .first, .sites ul .four { margin-left: 0; }
+.sites > ul > li > h3 > a {
+    background: #f68b1e;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+	color: #fff;
+	display: block; 
+	font-family: 'notokr';
+    font-weight: 400;
+}
+.sites > ul > li > h3 > a:hover { background: #de7b16; }
+.sites > ul > li > h3  { background: none !important; padding-left: 0 !important; }
+
+.sites > ul > li > ul > li > a {
+    display: block;
+    line-height: 35px;
+    padding-left: 10px;
+    color: #000 !important;
+    font-size: 16px;
+    margin-top: 10px;
+    letter-spacing: -0.050em;
+	margin-left: 10px;
+    border-bottom: 1px solid #e3e8e9;
+}
+
+.sites > ul > li > ul > li > a:hover { color: #2452a7 !important; text-decoration: underline; }
+.sites ul li ul p { line-height: 25px; padding-left: 20px; background: #f7f7f7; }
+.sites ul li ul p a {
+    padding-left: 10px;
+    line-height: 35px;
+    color: #666666;
+    font-family: 'notokr';
+    font-weight: 400;
+	font-size: 14px;
+}
+.sites ul li ul p a:hover { color: #2452a7 !important; text-decoration: underline; }
+.sites > ul > li > ul > li > ul { border-bottom: 1px solid #e3e8e9; }
+
+
+/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼓占쎈쿈占쎌굲/占쎈쐻占쎈짗占쎌굲�뎲�꼪�쐻占쎈뼍塋딉퐦�맔占쎌굲占쎈쐻�뜝占� S *****/
+div#member_ido_inr h3 { float: left; }
+.member_ido_ok {
+    clear: both;
+    width: 100%;
+    float: left;
+    border-top: #2452a7 2px solid;
+    border-bottom: #4c4f55 1px solid;
+    padding: 50px 0px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.member_ido_ok p { text-align: center; font-size: 20px; color: #222; line-height: 28px; }
+.member_ido_ok .ido_additional { font-size: 14px; line-height: 18px; padding-top: 20px; color: #929292; }
+.member_ido_ok .idpass_name span { font-size: 20px; color: #222; }
+
+.member_ido_password {
+    clear: both;
+    width: 100%;
+    float: left;
+    border-top: #2452a7 2px solid;
+    border-bottom: #4c4f55 1px solid;
+    padding: 50px 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+p.ido_additional2 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #929292;
+    text-align: center;
+    margin-top: 20px;
+}
+p.ido_additional2 span {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 20px;
+    color: #222;
+    text-decoration: underline;
+    line-height: 27px;
+}
+
+.ido_pass {
+    position: relative;
+    clear: both;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 480px;
+    overflow: hidden;
+    text-align: left;
+}
+p.ido_input {
+    position: relative;
+    margin: 0 0 12px 0;
+    padding: 0;
+    border: 1px solid #dadada;
+}
+
+.ido_pass label {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    padding-left: 17px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+.ido_pass label strong {
+    display: inline-block;
+    color: #333;
+	width: 100px; 
+}
+.ido_pass input {
+    padding: 17px 0;
+    width: 100%;
+    height: 20px;
+    border: 0;
+    line-height: 20px;
+    text-indent: 17px;
+    color: #666;
+}
+
+a.ido_btn {
+    display: block;
+    background: #007fcd;
+    height: 48px;
+    font-size: 18px;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*** 占쎈쐻占쎈짗占쎌굲�뎲�꼪�쐻占쎈뼍�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 ***/
+.password_ment {
+    font-size: 16px; color: #e87602; margin-top: 17px; font-weight: 500;
+}
+.password_ment ul {
+    margin-top: 30px; margin-bottom: 30px; padding-left: 20px; width: 100%; box-sizing: border-box;
+}
+.password_ment ul li {
+    display: block; width: 100%; line-height: 150%; padding-bottom: 10px;
+}
+.password input { padding: 5px !important; height: 22px !important; }
+
+.password .bbs_write table tbody th { width: 40%; }
+.password .bbs_write table tbody td { width: 60%; }
+
+
+/*** 占쎈쐻占쎈솓占쎌뒻占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈뼑占쎄땔占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 new ***/
+.serve_search { background: #f5f5f5; padding: 24px; border: #ccc 1px solid; overflow: hidden; }
+.serve_search dl { width: 50%; border-bottom: #ccc 1px dotted; padding: 9px 0; float: left; }
+.serve_search dl dt { color: #000; background: url(/assets/img/sub/ico_job.gif) left 11px no-repeat; padding-left: 12px; line-height: 30px; width: 106px; float: left; }
+.serve_search dl dd { line-height: 30px; }
+.serve_search dl dd select { display: inline-block; width: 66%; height: 30px; background: #fff; border: 1px solid rgb(169, 169, 169); vertical-align: middle; }
+.serve_search .thr dd select { width: 37%; }
+.serve_search .fou dd .time input { display: inline-block; width: 30%; height: 28px; }
+.serve_search .fiv dd input { float: left; width: 65%; height: 28px; }
+.serve_search dl span.check label { font-size: 13px !important; }
+.serve_search dl.one, .serve_search dl.thr, .serve_search dl.fiv { border-left:0 !important; }
+.serve_search dl.fiv, .serve_search dl.six { border-bottom:0 !important; }
+
+
+.se_contents01 { width: 100%; overflow: hidden; }
+.se_contents01 dl { width: 50%; float: left; border-bottom: 1px solid #dfe2e7; }
+.se_contents01 dl.SoSe_serdl { width: 100%;  }
+.se_contents01 dl dt {
+    color: #000;
+    padding: 15px;
+    background: #f7f7f7;
+    text-align: center;
+    width: 110px;
+    float: left;
+}
+.se_contents01 dl dd { padding: 15px 20px; float: left; }
+.se_contents01 dl.last { width: 100%;}
+
+
+/*占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲*/
+.operation { width: 100%; padding: 2% 0 2% 2%; border: 1px solid #ccc; margin-top: 10px; background: #f5f5f5;     box-sizing: border-box; }
+.operation p { font-size: 14px; height: 220px; overflow: auto;}
+.in_mo_ok { padding: 10px 0; margin-bottom: 30px; text-align: right; }
+.in_mo_ok input { position: relative; /*top: 2px;*/ border:0 !important;}
+
+p.bt_center a {
+    display: inline-block;
+    background: #f68b1e;
+    color: #fff;
+    padding: 11px 35px;
+    margin: 0 3px;
+}
+p.bt_center a.cancle_btn {
+    background: #686868 !important;
+}
+
+/* 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 */
+div.onetxt {
+	font-size: 18px;
+	color: #000;
+	font-weight: 400;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #f5f5f5;
+	padding: 14px 0;
+	border-radius: 25px;
+	margin-top: 60px;
+}
+div.onetxt:first-child { margin-top:0; }
+.person h3 { margin-top: 40px; margin-bottom: 15px;}
+.person p { line-height: 24px; padding-bottom: 10px;  }
+.person .submenu { padding-left: 15px; }
+.person .submenu span { color: #000; padding-bottom: 3px; display: block; }
+.person .submenu b { margin-right: 7px; color: #f68b1e; }
+.buchik { margin-bottom: 15px;  }
+
+
+
+
+.im_mo_importnat { margin-top: 10px; display: block; text-align: right; margin-bottom: 5px; }
+
+
+
+
+
+/***************************************/
+/* subpage_ responsive */
+/***************************************/
+
+/***************************************/
+/* media_responsive */
+/***************************************/
+@media (max-width:1100px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+	.imc04_01.imc04_thr {  padding-bottom: 388px; }
+	.imc04_01 { height: 1200px; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 50+ 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 *****/
+
+	.me_left_content { max-width: none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲筌ｏ옙 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｏ옙 占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 *****/
+	.sub_page_tell { width: 100%; }
+
+}
+
+
+@media (max-width:960px){
+	.imc04_01 { height: 1400px; }
+}
+
+
+@media (max-width:959px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	
+	.left_content p, .left_content p span { font-size: 20px; }
+	.imc04_01 dd span { margin-top: 15px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뻼繹먮씮�굲 S *****/
+	
+	.review_list ul li h6 { margin-bottom: 8px; }
+	.review_list ul li h6 a { font-size: 18px; }
+	.review_list ul li .ed_re_news { margin-top: 8px; }
+	.review_list ul li { padding: 25px 0; }
+
+	.blog_list dl dt { display: none; }
+	.blog_list dl dd { width: 100% !important; max-height: none !important; }
+	.blog_list ul li .blog_news { width: 100%; }
+	.blog_bt_btn { position: relative !important; top: 0 !important; }
+	.blog_bt_btn a { margin-top: 20px; }
+	
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뻼繹먮씮�굲 F *****/
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼦占쎈짗占쎌굲筌ｏ옙 S *****/
+	
+	span.im_mo_importnat { font-size: 12px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼦占쎈짗占쎌굲筌ｏ옙 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌넞占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+
+	span.ed_or_recruitment, span.ed_or_deadline { font-size: 11px; }
+	span.ed_or_deadline { padding: 4px 7px 4px 7px; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌넞占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈뼍占쎈꺋占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S *****/
+
+	.event .list_view dl dd.li_en_list_place p em { padding: 3px 0px; }
+	.event .list_view dl dd.li_en_list_subject a { font-size: 15px; }
+	.event .list_view dl dd.li_en_list_subject a span { font-size: 15px; }
+	p.li_ev_fin { font-size: 12px; border-top: 1px solid #ccc; }
+	
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 S *****/
+
+
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 F *****/
+
+	/***** 占쏙옙占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+
+	.ed_gu_contents01 h2 { margin-bottom: 20px; }
+
+	/***** 占쏙옙占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈뱜 占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.sites > ul > li > h3 > a { font-size: 16px; }
+	.sites > ul > li > ul > li > a { font-size: 14px; }
+	.sites ul li ul p a { font-size: 13px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈뱜 占쎈쐻占쎈짗占쎌굲 F *****/
+	span.so_in_pad { font-size: 12px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼓占쎈쿈占쎌굲/ 占쎈쐻占쎈짗占쎌굲�뎲�꼪�쐻占쎈뼍�뜝占� 筌≪뼃�쐻占쎈짗占쎌굲 *****/
+
+	.member_ido_ok p, .member_ido_ok .idpass_name span { font-size: 17px; }
+	.member_ido_ok .ido_additional { font-size: 13px; }
+	.member_ido_ok { padding: 40px 0px; }
+	p.ido_additional2, p.ido_additional2 span { font-size: 13px; }
+	a.ido_btn { font-size: 15px; }
+}
+
+
+@media (max-width:950px){
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 *****/
+	.igb_text .bold { font-size: 15px; }
+
+
+	/***** 占쏙옙占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 *****/
+
+	.ed_gu_contents01 ul li { width: 33.3333%; }
+	.ed_gu_contents02 ul li { width: 33.3333%; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲 *****/
+	.civil_tab a, .civil_tab a.active { font-size: 14px !important; }
+	table.in_job_table td { padding: 10px; }
+
+
+
+}
+
+@media (max-width:915px){
+.catalog_list ul li { width: 100%; }
+ .catalog_list ul li:nth-child(2) { border-top: 1px dashed #ccc !important; }
+.catalog_list ul li h6 a { font-size: 18px; }
+.journal .catalog_list ul li .ed_re_news a { padding: 7px 0; width: 105px;}
+}
+
+
+@media (max-width:900px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌넞占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+	.so_be_explanation .so_be_right { display: none; }
+	.so_be_explanation .so_be_left { width: 100%; padding-bottom: 30px;}
+	.so_be_explanation { padding: 0 30px 0 30px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓占쎌뒻占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+	.so_be_explanation { padding: 0 30px 0 30px; }
+	.so_be_explanation .so_be_left { width: 100%; padding-top: 20px; padding-bottom: 20px; }
+	.so_be_explanation .so_be_right img { display: none; }
+	.so_be_explanation .so_be_left h4 { font-size: 22px; }
+
+	/****** 50+ 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲  占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.me_left_content { width: 100%; }
+	.me_right_content { width: 100%; float: left; max-width: none; margin-top: 25px; }
+	.mrc_inr .comp_con { overflow: hidden; }
+	.mrc_banner ul li { width: 50%; float: left; }
+	.mainjob .mrc_banner ul li { width: 33.3333%; float: left; }
+	.mrc_banner .fir_btn { border-bottom: 0; border-right: 1px dotted #ccc; box-sizing: border-box; }
+	.mrc_banner { overflow: hidden; }
+
+	.mrc_banner h5 { font-size: 15px; }
+	.me_table .board_list li a { font-size: 13px; }
+	.me_con1 a span { font-size: 12px; }
+
+	/****** 50+ 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲  占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.jjd .civil_tab a { min-width: 200px; }
+
+}
+
+
+@media (max-width:890px){
+	.ed_cu_content ul li a { text-align: center; }
+	.ed_cu_content ul li dt { display: inline-block; float: none; }
+	.ed_cu_content ul li dd { width: 91%; margin-top: 20px; margin-left: 0; }
+	.ed_cu_content ul li dt img { top: 82%; margin-top: 0; left: 50%; margin-left: -13px; }
+
+	img.ed_cu_img01_pc { display: none; }
+	img.ed_cu_img01_mobile { display: block; }
+}
+
+
+@media (max-width:875px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	li.plus.in_mi_plus_sec { display: none; }
+	.in_mi_content02 .plus { padding: 0 60px; top: -60px; }
+	.in_mi_fin { width: 100%; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈솦獄�袁⑹굲占쎈뱣 *****/
+
+.civil_tab a {
+    display: inline-block !important;
+    border-left: 0 !important;
+    margin-bottom: 0 !important;
+    height: 50px;
+    line-height: 50px;
+    width: 25%;
+    float: left;
+    display: block;
+    margin-right: 0px;
+    box-sizing: border-box;
+}
+	
+.civil_tab a.active {
+	border-left: #2f71d2 1px solid !important;
+	border-bottom: #2f71d2 1px solid;
+	padding-bottom: 0 !important;
+    width: 25%;
+    float: left;
+    display: block !important;
+    box-sizing: border-box;
+}
+.civil_tab { background: none !important; }
+
+.civil_tab  .tab_left_border { border-left: 1px solid #ccc !important; }
+.tab_bottom_border { border-bottom: 1px solid #ccc; }
+
+	/***** 占쎈쐻占쎈솦獄�袁⑹굲占쎈뱣 *****/
+
+
+
+
+}
+
+@media (max-width:870px){
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 S *****/
+
+	.left_content p { padding: 40px 50px 0 0; }
+	.left_content p, .left_content p span { font-size: 18px; }
+	.left_content p::before { top: 15px; }
+	.left_content p:after { top: 130px; }
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 F *****/
+
+}
+
+@media (max-width:860px){
+
+	/***** 50+占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.mainjob .mrc_banner ul li { padding-bottom: 15px; }
+
+	/***** 50+占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+}
+
+@media (max-width:860px){
+	.se_contents01 dl { width: 100%; }
+	.se_contents01 dl dt { width: 20%; box-sizing: border-box; }
+	.se_contents01 dl dd { width: 80%; box-sizing: border-box; }
+}
+
+
+@media (max-width:840px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.civilian_list colgroup { display: none; }
+	.jc01 { width: 18%; }
+	.jc02 { width: 35%; }
+	.jc03 { width: 15%; }
+	.jc04 { width: 9%; }
+	.jc05 { width: 14%; }
+	.jc06 { width: 9%; display: none; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+}
+
+
+@media (max-width:825px){
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼦占쎈짗占쎌굲筌ｏ옙 S *****/
+	
+	.table_hundred { width: 99%; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼦占쎈짗占쎌굲筌ｏ옙 S *****/
+
+	/***** 筌≪뼃�쐻占쎈뼃占쎌뒻占쎌굲占쎈쐻占쎈뻻占쎈솇占쎌굲 占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.map ul li { width: 100%; }
+	.map ul li span { max-width: 100px; min-width: 77px; font-size: 13px; }
+
+	/***** 筌≪뼃�쐻占쎈뼃占쎌뒻占쎌굲占쎈쐻占쎈뻻占쎈솇占쎌굲 占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/*** 占쎈쐻占쎈솓占쎌뒻占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 ***/
+	.serve_search dl { width: 100%; }
+	.serve_search dl dd select { width: 80%; }
+	.serve_search .thr dd select { width: 60%; }
+	.serve_search .fiv dd input { width: 80%; }
+	.serve_search dl dt { width: 16% !important; min-width: 65px; }
+
+}
+
+@media (max-width:800px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.jobbiz_03 colgroup { display: none;  }
+	.jj01 { display:none; width: 10%; }
+	.jj02 { width: 10%; }
+	.jj03 { width: 20%; }
+	.jj04 { width:15%; }
+	.jj05 { width: 30% }
+	.jj06 { width: 15%; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+}
+
+
+@media (max-width:784px){
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 S *****/
+
+	.left_content p { padding: 40px 27px 0 0;  }
+	.left_content p, .left_content p span { font-size: 16px; font-weight: 400; line-height: 27px; }
+	.left_content p::before { background: url(/assets/img/sub/in_gr_img02_small.png) no-repeat; width: 21px; height: 19px; top: 30px; }
+	.left_content p:after { background: url(/assets/img/sub/in_gr_img03_small.png) no-repeat; width: 21px; height: 19px; top: 115px; }
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 F *****/
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.imc04_01 { width: 98%; margin: 100px 1% 50px 1%; height: auto; padding-bottom: 30px; }
+	.imc04_01.imc04_fir, .imc04_01.imc04_thr { padding-bottom: 30px; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈뱜占쎈쐻占쎈짗占쎌굲 S ****/
+
+	.sites > ul > li { width: 48%; margin-left: 2%; }
+	.sites > ul > li.three, .sites > ul > li.five { margin-left: 0; } 
+	.sites > ul > li.four { margin-left: 2%; }
+	li.sites_clear { clear: both; margin-left: 0 !important; }
+	ul.first_content { margin-bottom: 0; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈뱜占쎈쐻占쎈짗占쎌굲 F ****/
+
+
+}
+
+@media (max-width:770px){
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.jc03 { display: none; }
+	table.in_job_table td { padding: 5px; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+}
+
+
+
+@media (max-width:760px){
+	.review_list dl dd { max-height: none; }
+}
+
+@media (max-width:750px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	label.job_feild { width: 16% !important; min-width: 65px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲 *****/
+	a.job_gojob_down { margin-left: 0px; margin-top: 10px; }
+	a.job_gojob_text { width: 100%; float: left;  }
+
+}
+
+
+@media (max-width:740px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍�뜝占� S *****/
+
+	.in_mo_down th.room { border-top: 2px solid #2452a7 !important; }
+	.mobile .in_mo_down table th { border-top: 1px solid #dfe2e7; }
+	th.th_first { border-top: 2px solid #2452a7 !important; }
+	.in_mo_down table td { height: auto ;}
+	.in_mo_01 { display: none; }
+	.in_mo_02 { display: block; }
+	.in_mo_down th.room { font-size: 13px; }
+	.in_mo_calendar table td { font-size: 12px; }
+	span.day_list a { font-size: 12px; }
+	.li_ev_content01 dl dt img { height: auto; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍�뜝占� F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S *****/
+
+	.event .list_view dl { width: 100%; }
+	dl.li_ev_bonone.li_ev_border { padding-bottom: 30px !important; border-bottom: 1px dashed #ccc !important; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.jj02 { display:none; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+}
+
+@media (max-width:735px){
+
+	.mainjob .mrc_banner ul li a img { float: none; margin: 0 auto; display: block; padding: 10px 0; }
+	.mainjob .mrc_banner h5 { clear: both; text-align: center; width: 100%; padding-top: 5px; padding-bottom: 10px; }	
+	.mainjob .mrc_banner ul li a p { display: none;  }
+	.mainjob .mrc_banner ul li { padding-bottom:0; }
+	.mainjob .mrc_banner h5 { font-size: 13px; padding-left: 0 !important; text-align: center !important; }
+
+}
+
+@media (max-width:700px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+
+	.ed_cu_content ul li dd { height: 88px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 F *****/
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｏ옙 S *****/
+
+	.order_list table colgroup { display: none; }
+	.eo02 { display: none; }
+	.eo04 { display: none; }
+	.me01 { display: none; }
+	.mj01 { display: none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｏ옙 F *****/
+	
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S *****/
+	.li_ev_content01 dl dt { width: 100%; float: none; margin: 0 auto 30px; }
+	.li_ev_content01 dl dd { float: left; width: 90%; }
+	.li_ev_content01 dl dd h4 { font-size: 20px; color: #2452a7; }
+	.li_ev_content01 dl dd p span { color: #000; }
+
+	span.li_ev_care { font-size: 12px; }
+
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 S *****/
+
+	.in_gr_top { border-bottom: 0; }
+
+	.right_content { float: left; width: 100%; }	
+	.left_content { float: left; width: 100%; border:1px solid #d7d7d7; background: #f7f7f7; border-radius: 15px; box-sizing: border-box; }	
+	.left_content p { padding: 40px 0; width:100%; }
+	.left_content p, .left_content p span { font-size: 19px; line-height: 32px; }
+	.left_content p::before { background: none;}
+	.left_content p:after { background: none; }
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.year01 > .year_inr > .thum span b { color: #2452a7; }	
+	.year01 > .year_inr > .thum::before, .year01 > .year_inr > .thum::after, .year_inr dl::before, .year_inr dl dt::before, .year_inr dl dt::after { display: none;  }
+	.history_inr { background: none; }
+	.year_inr dl, .year_inr dl:last-child { border-left: 0; }
+
+	.year01 > .year_inr > .thum {
+		position: relative;
+		/* left: 0; */
+		/* top: 0; */
+		width: 100%;
+		padding: 0;
+		box-sizing: border-box;
+		margin-bottom: 30px;
+	}
+	.year01 > .year_inr > .thum span { font-size: 19px; text-align: left; margin-bottom: 10px; }
+	.year01 > .year_inr { padding: 0; }
+	.year_inr dl {
+		padding-left: 77px;
+		position: relative;
+		border-left: 0;
+		margin-bottom: 36px;
+		border-right: 0;
+		float:left;
+		width: 85%; 
+	}
+	.in_hi_first {  margin-top: 40px; }
+	.year_inr dl dt { font-size: 19px; margin-bottom: 13px; position: absolute; left: 0; }
+	.year_inr dl dd { margin-bottom: 5px; font-size: 14px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 f *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	img.in_or_img01 { display: none; }
+	img.in_or_img01_small { display: block; }
+	.organ img { margin-bottom: 30px; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쏙옙占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+
+	.ed_gu_contents01 ul li { width: 50%; }
+	.ed_gu_contents02 ul li { width: 50%; }
+
+	/***** 占쏙옙占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 F *****/
+
+}
+
+@media (max-width:640px){
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.jj06 { display:none; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+}
+
+@media (max-width:660px){
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 S *****/
+	.job input.table_hundred { margin-left: 0; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 F *****/
+}
+
+@media (max-width:650px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎌넞占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓占쎌뒻占쎌굲 S *****/	
+	.info .list_table colgroup { display: none; }
+	.si01 { width: 7% }
+	.si02 { width: 15% }
+	.si03 { width: 3% }
+	.si04 { width: 4% }
+	.si05 { width: 6% }
+	.si06 { width: 6% }
+	.si07 { width: 4% }
+	
+	.si01, .si03 { display: none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎌넞占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓占쎌뒻占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S *****/
+
+	span.so_in_pad { margin-left: 0;  }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 S *****/
+
+	.person .img01 { display: none; }
+	.person .img02 { width: 100%; max-width: 370px; margin: 30px auto 30px; display: block; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.jc04, .jc05 { display: none; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 S *****/
+	.gojob colgroup { display: none; }
+	.jg01 { width: 18%; }
+	.jg02 { width: 38%; }
+	.jg03 { width: 12%; }
+	.jg04 { width: 12%; display: none; }
+	.jg05 { width: 12%; }
+	.jg06 { width: 12%; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 S *****/
+}
+
+
+@media (max-width:625px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.in_mi_content02 ul li { width: 100%; }
+	.in_mi_content02 .plus { padding: 3% 0; top: 0; }
+	.in_mi_content03 ul li { width: 100%; margin-left: 0; margin-bottom: 3%; }
+	.in_mi_content03 ul li, .in_mi_content03 ul li span { font-size: 17px; }
+
+	li.plus.in_mi_plus_sec { display: block; }
+
+	img.in_us_top { margin-top: 10px; width: 100%; }
+	.iu_sec_img01 { display: none; }
+	.iu_sec_img02 { display: block; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.me05 { display:none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뻻�뜝占� 占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎌넺 S *****/
+	.month .in_us_table td { padding: 5px; }
+
+	.in_vi_month span { display: block; margin-top: 10px; }
+	.in_vi_month span select { display: block; margin-top: 10px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뻻�뜝占� 占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎌넺 F *****/
+	
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼢繹먮씮�굲占쎈쐻占쎈짗占쎌굲 S *****/
+	a.job_order_down { margin-left: 5px; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼢繹먮씮�굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 S *****/
+	.jg05 { display: none; }
+	.jg06 { display: none; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 S *****/
+
+}
+
+@media (max-width:610px){
+	.serve_search .thr dd select { width: 31%; }
+	.serve_search .fou dd .time input { width: 37%; }
+}
+
+@media (max-width:600px){
+	.id_email { width: 40%; }
+	.adress_email { width: 50%; }
+	select.select_email { width: 97% !important; }
+	
+
+}
+
+
+@media (max-width:585px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼢繹먮씮�굲占쎈쐻占쎈짗占쎌굲 S *****/
+	a.job_order_down { margin-left: 0px; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼢繹먮씮�굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+}
+
+@media (max-width:570px){
+
+	/***** 50+ 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 s *****/
+
+	.mrc_banner ul li a img { float: none; margin: 0 auto; display: block; padding: 10px 0; }
+	.mrc_banner h5 { clear: both; text-align: center; width: 100%; padding-top: 5px; padding-bottom: 10px; }	
+	.mrc_banner ul li a p { display: none;  }
+	.mrc_banner h5 { font-size: 13px; padding-left: 0 !important; text-align: center !important; }
+	/***** 50+ 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 f *****/
+
+	.civil_tab a, .civil_tab a.active { padding: 0px 8px !important; text-align: center; }
+}
+
+
+@media (max-width:550px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.me04 { display:none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	/***** 50+ 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼣占쎈짗占쎌굲 - 占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼣占쎈닰占쎌굲 S *****/
+
+	img.job_process { display: none; }
+	img.job_process2 { width: 100%; max-width: 415px; display: block; margin: 0 auto; }
+
+	/***** 50+ 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼣占쎈짗占쎌굲 - 占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼣占쎈닰占쎌굲 S *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼢繹먮씮�굲占쎈쐻占쎈짗占쎌굲 S *****/
+	a.job_order_down { margin-top: 10px; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼢繹먮씮�굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.ed_or_tab a { padding: 0px 8px !important; text-align: center;}
+}
+
+
+@media (max-width:520px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	table.in_or_contents01 td { padding: 5px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.year_inr dl { width: 80%;  }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼦占쎈짗占쎌굲筌ｏ옙  S *****/
+
+	.visit colgroup { display: none; }
+	.iv01, .iv05 { display: none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼦占쎈짗占쎌굲筌ｏ옙  F *****/
+
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+
+	.ed_cu_content ul li dd {  height: 110px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌넞占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+
+	.so_be_explanation .so_be_left h4 { font-size: 20px; }
+	.so_be_explanation .so_be_left span { font-size: 13px; }
+	.so_be_explanation .so_be_left p { font-size: 13px; }
+	.so_be_explanation { padding: 0 20px 0 20px; }
+	.so_be_explanation .so_be_left { padding-top: 20px; padding-bottom: 20px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌넞占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈뼍占쎈꺋占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈뼢占쎄땔占쎌굲占쎈쐻占쎈뻻占쎄땔占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S *****/
+
+	.city colgroup, 	.notice_list colgroup { display: none; }
+	.lc01, .lc04, .lc06 { display: none; }	
+
+	/***** 占쎈쐻占쎈뼢占쎄땔占쎌굲占쎈쐻占쎈뻻占쎄땔占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� F *****/
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲筌ｏ옙占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.mj02 { display: none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲筌ｏ옙占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 S *****/
+	
+	.h3Section { margin: 0; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 F *****/
+
+}
+
+@media (max-width:500px){
+	
+	ul.me_top_box01 { position: relative; padding-top: 10px; text-align: center; top: 0;}
+	ul.me_top_box01 li { display: inline-block; float: none; }
+	li.me_4nplus1 { margin-left: 0 !important; }
+	li.me_clear { clear: none; }
+	ul.me_top_box01 li a { display: inline-block; }
+	.mainjob .me_top_box01 { top: 0; width: 100%; }
+	.me_table { float: left; width: 100%; }
+	.mainjob ul.me_top_box01 li { display: block; float: left; width: 33%; margin-left: 0; }
+	.jobbiz table.in_job_table td { line-height: 16px; }
+
+	select.table_m_hundred { width: 98% !important; }
+	input.top_days { width: 45% !important; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌넞占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S *****/
+	select.hundred_400 { width:99% !important; }
+
+	p.ido_additional2 span { clear: both; display: block; }
+
+
+	.serve_search dl dd { clear: both; }
+	.serve_search dl dd select { width: 100%; display: block !important; }
+	.serve_search .thr dd select { width: 100%; }
+}
+
+
+
+
+@media (max-width:490px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	img.in_or_img01_small { display: none; }
+	img.in_or_img01_small2 { display: block; }
+	.organ img { max-width: 348px; margin: 0 auto 30px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+	
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.year01 > .year_inr > .thum > span  { font-weight: 400; }
+	.year01 > .year_inr > .thum > span > b { float: left; margin-right: 10px; margin-bottom: 10px; font-size: 20px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뻻�뜝占� S *****/
+	
+	.in_mo_calendar table td { height: auto; padding: 5px 0 10px 8px; }
+	.in_mo_calendar table th span { font-size: 11px !important; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뻻�뜝占� F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼦占쎈짗占쎌굲筌ｏ옙 S *****/
+
+	.in_vi_visit span { display: block; margin-top: 10px; }
+	.in_vi_visit span select { width: 70% !important; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼦占쎈짗占쎌굲筌ｏ옙 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎌넞占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓占쎌뒻占쎌굲 S *****/
+	.si04, .si05 { display: none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S ****/
+
+	.top_days { width: 41% !important; padding: 0; margin: 0;}
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S ****/
+
+
+.se_contents01 dl dt { min-width: 80px; padding:10px; }
+.se_contents01 dl dd { width: 70%; padding:10px; }
+
+
+
+}
+
+@media (max-width:480px){
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲 *****/
+	
+	div#mobile_tab { display: block; }
+	div#civil_top_container { display: none; }
+div#mobile_tab label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 17px;
+    color: #fff;
+    text-align: left;
+    background: url('/assets/img/sub/m_content.png') no-repeat 90% 18px;
+	height:50px;
+	line-height: 50px;
+}
+div#mobile_tab select#select_m {
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+div#mobile_tab select#select_m { font-size: 15px; }
+
+.civilian_list .table_hundred { width: 98% !important; }
+.table_haif { width: 49% !important; }
+
+	.ed_or_title h4 span { 
+	text-align: left;
+    display: inline-block;
+    float: left;
+    width: 80%;
+	}
+	span.ed_or_deadline { text-align: center; width: 57px !important; }
+
+
+}
+
+
+@media (max-width:475px){
+	/***** 占쏙옙占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+
+	.ed_gu_contents01 ul li { width: 48%; margin-right: 5px; }
+	.ed_gu_contents02 ul li { width: 48%; margin-right: 5px; }
+
+	/***** 占쏙옙占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 F *****/
+	.adress_email { width: 48%; }
+
+}
+
+@media (max-width:465px){
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 S *****/
+	.in_gr_top { border-bottom: 0; }
+
+	.right_content { float: left; width: 100%; }	
+	.left_content { float: left; width: 100%; border:1px solid #d7d7d7; background: #f7f7f7; border-radius: 15px; box-sizing: border-box; }	
+	.left_content p { padding: 20px 0; }
+	.left_content p, .left_content p span { font-size: 15px; line-height: 27px;  }
+
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.in_mi_content03 ul li { width: 100%; margin-left: 0; margin-bottom: 3%; }
+	.in_mi_content03 ul li, .in_mi_content03 ul li span { font-size: 15px; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	.year_inr dl { margin-bottom: 20px; }
+	.year_inr dl dd { font-size: 13px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｏ옙 S *****/
+
+	.eo03 { display: none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｏ옙 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.me02 { width: 17%; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 S *****/
+
+	.mt_pe_table_pc { display: none; }
+	.mt_pe_table_mobile { display: block; }
+	.mt_pe_table_mobile colgroup { display: none; }
+	.mt_pe_table_mobile th { width: 30%; }
+	.mt_pe_table_mobile td { width: 70%; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 F *****/
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	p.job_title { font-size: 14px !important; }
+	.jc01 { width: 16%; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼓�뇡�빘�굲 占쎈쐻占쎈짗占쎌굲 *****/
+	
+	table.in_us_table td { padding: 10px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼓�뇡�빘�굲 占쎈쐻占쎈짗占쎌굲 *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	span.jtext { width: 70%; }
+	p.job_txt span { margin: 10px 0 0 13px !important; }
+	.job_txt span.jtit { margin: 0px !important; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+}
+
+
+@media (max-width:460px){
+	.journal .catalog_list ul li dl dt img { display: none; }
+	.catalog_list dl dd { width: 96%; padding: 0 2%; }
+	.catalog_list ul li { padding: 20px 0; }
+	.catalog_list ul li h6 a { font-size: 16px; }
+}
+
+
+
+
+@media (max-width:435px){
+
+	/***** 50+占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.me_left_content > .me_top > img { width: 100%; }
+	.me_left_content .me_top p span { font-size: 20px; padding-bottom: 6px; }
+	span.title_lit { font-size: 15px !important; }
+	.mainjob .me_left_content .me_top p span { clear: both; }
+	    
+
+	ul.me_top_box01 { padding-bottom: 10px; float: left; }
+	ul.me_top_box01 li { margin-left: 0; margin-bottom: 0; display: block; width: 25%; float: left;}
+	ul.me_top_box01 li a { display: block; float: left; width: 100%; padding: 5% 0; height: 46px; border:0; border-radius: 0; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; box-sizing: border-box; }
+	li.me_top_btn { border-top: 1px solid #ccc; }
+	ul.me_top_box01 li a img { display: none !important; }
+	ul.me_top_box01 li a span { display: block;  vertical-align: middle; line-height: 36px; padding-top: 0; }
+	span.me_ttext { padding-top: 0 !important; line-height: 18px !important; }
+	li.me_4nplus1 { border-left: 1px solid #ccc; box-sizing: border-box; }
+
+	.main_edu .me_table { float: left; width: 100%;}
+	/***** 50+占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+}
+
+
+@media (max-width:420px){
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.jj05 { display:none; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	.ed_or_title h4 span { width: 66%; }
+	.order  .ed_or_title h4 span { width: 100%; }
+}
+
+@media (max-width:410px){
+	.adress_email { width: 44%; }
+}
+
+
+
+@media (max-width:400px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼦占쎈짗占쎌굲筌ｏ옙  S *****/
+	.iv04 { display: none; }
+
+	/***** 占쎈쐻占쎈뼢占쎄땔占쎌굲占쎈쐻占쎈뻻占쎄땔占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S *****/
+
+	.lc05 { display: none; }	
+
+	/***** 占쎈쐻占쎈뼢占쎄땔占쎌굲占쎈쐻占쎈뻻占쎄땔占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� F *****/
+
+	
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占�  S *****/
+	.li_ev_content01 dl dd p { line-height: 30px; }
+	.li_ev_content01 dl dd p span { width: 100%; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占�  S *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈셾占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 *****/
+
+	select.m_none_keyword { display: none !important; }
+	input.m_w_keyword { margin-left: 0 !important; width: 99% !important; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈셾占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲筌ｏ옙占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+
+	.mj03 { width: 17%; }
+	.mj05 { display: none; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲筌ｏ옙占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+}
+
+@media (max-width:380px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼢繹먮씮�굲占쎈쐻占쎈짗占쎌굲  S *****/
+	
+	.iu_sec_img02, 	.iu_sec_img04 { display: none; }
+	.iu_sec_img03 { display: block; }
+
+	img.in_us_top { max-width: 387px; margin: auto 0; padding-top: 0 ;}
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼢繹먮씮�굲占쎈쐻占쎈짗占쎌굲  F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占�  S *****/
+
+	/*.event .list_view dl dt img { height: auto; }*/
+	.event .list_view dl { height: auto; min-height: 190px; }
+	.event .list_view dl dd.li_en_list_place { bottom: 30px; }
+	.event .list_view dl dd.li_en_list_place { top: 25%; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占�  F *****/
+
+	/****** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 S *****/
+	.incon_ex ul li { width: 33.3333%; text-align: left; padding: 0; }
+	/****** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓筌뤿슣�굲 F *****/
+
+	.member_ido_ok p, .member_ido_ok .idpass_name span { font-size: 15px; }
+
+}
+
+@media (max-width:370px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 S *****/
+	.year_inr dl { width: 78%; }
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 S *****/
+
+	.ed_cu_content ul li dd { height: 110px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼍占쎈꺋占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 S *****/
+
+	.person .img02 { max-width: auto !important; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｌ꼪�쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲燁삼옙 F *****/
+}
+
+@media (max-width:360px){
+
+	/***** table *****/
+	table.in_us_table th { padding: 10px 6px; }
+	input.file_w { width: 99%; }
+	/***** table *****/
+
+	/***** 占쎈쐻占쎈뼢占쎄텢筌랃옙 *****/
+	.left_content p, .left_content p span { font-size: 13px; line-height: 23px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� ****/
+	.top_days { font-size: 12px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎌넞占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 *****/
+	input.m_w_keyword { width: 97% !important; }
+	.eo01 { width: 15%; }
+	
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈뱜 占쎈쐻占쎈짗占쎌굲 *****/
+	.sites > ul > li { width: 100%; margin-left: 0%; }	
+
+
+}
+
+@media (max-width:350px){
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎌넞占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓占쎌뒻占쎌굲 S *****/
+
+	.si02 { width: 8%; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌돳占쎌넞占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈솓占쎌뒻占쎌굲 F *****/
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� S ****/
+
+	.top_days { font-size: 11px; }
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎌넅占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� F *****/
+
+	/***** 占쎈쐻占쎈솙占쎈섣占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈뼣占쎈닰占쎌굲占쎈쐻占쎈짗占쎌굲 *****/
+	input#bbs_inp_file { width: 99%; }
+
+
+
+	/***** 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲筌ｏ옙 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌ｏ옙 *****/
+	.sub_page_tell { padding: 18px; }
+	.sub_page_tell ul li { width: 98%; padding-left: 18px; }
+	.sub_page_tell ul .t1 { margin-bottom: 10px; }
+}
+
+
+
+
+/*** 占쎈쐻占쎈셾占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈짗占쎌굲占쎈쐻占쎈짗占쎌굲筌욑옙 ***/
+ul.pagination li { border: 1px solid #aaa; padding: 5px 10px; display: inline-block; margin: 0 1px; }
+ul.pagination li.active { background: #a4c23c; }
+ul.pagination li.active span { color: #fff; }

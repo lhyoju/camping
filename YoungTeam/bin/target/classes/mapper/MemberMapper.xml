@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.MemberDAO">
+	
+	<select id="login" resultType="com.example.demo.vo.MemberVO" parameterType="String">
+		SELECT * FROM CAM_MEMBER WHERE userid=#{userid} and ustate=1
+	</select>
+	
+
+	<insert id="insertMember">
+		INSERT INTO CAM_MEMBER (userid,userpwd,name,uphone1,uphone2,uphone3,phone1,phone2,phone3,email,email2,zipcode,address,address2,auth,joindate,ustate) 
+			VALUES (#{userid},#{userpwd},#{name},#{uphone1},#{uphone2},#{uphone3},#{phone1},#{phone2},#{phone3},#{email},#{email2},#{zipcode},#{address},#{address2},1,sysdate,1)
+	</insert>
+	
+	<select id="pwdSearch" resultType="com.example.demo.vo.MemberVO" parameterType="com.example.demo.vo.MemberVO">
+		SELECT * FROM CAM_MEMBER WHERE userid=#{userid} and email=#{email} and email2=#{email2} and ustate=1
+	</select>
+		
+	<select id="idSearch" resultType="com.example.demo.vo.MemberVO" parameterType="com.example.demo.vo.MemberVO">
+		SELECT * FROM CAM_MEMBER WHERE name=#{name} and email=#{email} and email2=#{email2} and ustate=1
+	</select>
+	
+	<select id="idCheck" resultType="int">
+		SELECT count(*) FROM CAM_MEMBER WHERE userid=#{userid}
+	</select>
+	
+	<update id="editMember" parameterType="com.example.demo.vo.MemberVO">
+		update cam_member set userpwd=#{userpwd},uphone1=#{uphone1},uphone2=#{uphone2},uphone3=#{uphone3},phone1=#{phone1},phone2=#{phone2},phone3=#{phone3},email=#{email},email2=#{email2},zipcode=#{zipcode},address=#{address},address2=#{address2}
+			where userid=#{userid}
+	</update>
+	
+	<update id="delMember" parameterType="com.example.demo.vo.MemberVO">
+		update cam_member set ustate=2, delcont=#{delcont}, deldate=sysdate 
+			where userid=#{userid}
+	</update>
+	
+	<update id="updatePwd">
+		update cam_member set userpwd=#{userpwd} where userid=#{userid}
+	</update>
+	
+	<select id="joinEmailCheck" parameterType="com.example.demo.vo.MemberVO" resultType="com.example.demo.vo.MemberVO">
+		select * from cam_member where name=#{name} and email=#{email} and email2=#{email2}
+	</select>
+
+	
+</mapper>

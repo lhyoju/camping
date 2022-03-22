@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.ReservateDAO">
+	<select id="reservateTest" parameterType="com.example.demo.vo.ReservationVO" resultType="com.example.demo.vo.ReservationVO">
+		SELECT 
+		resid,
+		resDay,
+		startDay,
+		endDay,
+		price,
+		sitenum,
+		siteStatus,
+		userid,
+		resname,
+		phone,
+		carnum,
+		carkinds,
+		paymethod,
+		paystatus
+		 FROM RESERVE
+	</select>
+	
+	<select id="resCon" parameterType="String" resultType="com.example.demo.vo.ReservationVO">
+		SELECT 
+		resid,
+		resDay,
+		startDay,
+		endDay,
+		price,
+		sitenum,
+		siteStatus,
+		userid,
+		resname,
+		phone,
+		carnum,
+		carkinds,
+		paymethod,
+		paystatus
+		 FROM RESERVE
+		 where userid = '${userid}'
+	</select>
+	
+	<insert id="insertTest" parameterType="com.example.demo.vo.ReservationVO">
+		insert into reserve (resid, resDay, startDay, endDay, price, sitenum, siteStatus, userid, resname, phone, carnum, carkinds, paymethod, paystatus, mid)
+values('${resid}', '${resDay}', '${startDay}', '${endDay}', '${price}', '${sitenum}', '${siteStatus}', '${userid}', '${resname}', '${phone}', '${carnum}', '${carkinds}', '${paymethod}', '${paystatus}', '${mid}')
+	</insert>
+	
+	<delete id="deleteTest">
+	delete from reserve where resid = '${resid}'
+	</delete>
+	
+	<insert id="resDatemanIns" parameterType="com.example.demo.vo.ResDateManVO">
+	insert into resDateMan(resDateManId, resDate, sitenum, userid, resid, resstatus)
+	values('${resDateManId}', '${resDate}', '${sitenum}', '${userid}', '${resid}', '${resstatus}')
+	</insert>
+	
+	<select id="resDateManSel" parameterType="String" resultType="com.example.demo.vo.ResDateManVO">
+	select
+	resDateManId,
+	resDate,
+	sitenum,
+	userid,
+	resstatus
+	 from resDateMan
+	</select>
+	
+	<!-- 관리자 페이지 - 레코드 개수 -->
+	<select id="adminListCount" resultType="int">
+		select count(resid) from reserve
+		<where>
+			<if test="find_field == ''">
+			</if>
+			<if test="find_field == 'resname'">
+				resname like '${find_name}'
+			</if>
+			<if test="find_field == 'sitenum'">
+				sitenum like '${find_name}'
+			</if>
+		</where>
+	</select>
+	<update id="confirmPay" parameterType="com.example.demo.vo.ReservationVO">
+	update reserve set paystatus = 0 where resid = '${resid}'
+	</update>
+	<update id="confirmPay2" parameterType="com.example.demo.vo.ResDateManVO">
+	update resdateman set resstatus = 0 where resid = '${resid}'
+	</update>
+	
+	<select id="resManList" resultType = "com.example.demo.vo.ReservationVO" parameterType="com.example.demo.vo.ReservationVO">
+		select * from
+		(select rowNum rNum,resid,resDay,startDay,endDay,price,sitenum,siteStatus,userid,resname,phone,carnum,carkinds,paymethod,paystatus
+		from (select * from reserve
+		<where>
+			<if test="find_field == ''">
+			</if>
+			<if test="find_field == 'resname'">
+				resname like '${find_name}'
+			</if>
+			<if test="find_field == 'sitenum'">
+				sitenum like '${find_name}'
+			</if>
+			userid = '${userid}'
+		</where>
+	
+		)
+		
+		)
+		where rNum &gt;= '${startrow}' and rNum &lt;= '${endrow}'
+	</select>
+	
+	<select id="resManListCount" parameterType="com.example.demo.vo.ReservationVO" resultType="int">
+		select count(*) from reserve where userid = '${userid}'
+		
+		
+	</select>
+	
+	<update id="refund" parameterType="com.example.demo.vo.ReservationVO">
+		update reserve set paystatus = 2 where resid = '${resid}'
+	</update>
+	
+	<delete id="resDel" parameterType="com.example.demo.vo.ResDateManVO">
+	delete resdateMan where resid = '${resid}'
+	</delete>
+	
+	<update id="resvdel" parameterType="com.example.demo.vo.ReservationVO">
+	update reserve set paystatus = 3 where resid = '${resid}'
+	</update>
+	
+	<!-- 관리자 페이지 - 예약 리스트 -->
+	<select id="adminList" parameterType="com.example.demo.vo.ReservationVO" resultType="com.example.demo.vo.ReservationVO">
+		select * from
+		(select rowNum rNum,resid,resDay,startDay,endDay,price,sitenum,siteStatus,userid,resname,phone,carnum,carkinds,paymethod,paystatus,mid
+		from (select * from reserve
+		<where>
+			<if test="find_field == ''">
+			</if>
+			<if test="find_field == 'resname'">
+				resname like '${find_name}'
+			</if>
+			<if test="find_field == 'sitenum'">
+				sitenum like '${find_name}'
+			</if>
+		</where>
+		))
+		where rNum &gt;= '${startrow}' and rNum &lt;= '${endrow}'
+	</select>
+</mapper>

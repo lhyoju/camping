@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.ReservateDAO">
+	<select id="resSelNP" resultType="com.example.demo.vo.MemberVO" parameterType="String">
+		select name, uphone1, uphone2, uphone3 from cam_member where userid = '${userid}'
+	</select>
+</mapper>

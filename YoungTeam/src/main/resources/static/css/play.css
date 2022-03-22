@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+.vt {
+	vertical-align: top !important;
+}
+
+.mt20 {
+	margin-top:20px !important;
+}
+.ph20 {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.p5 {
+	padding:5px !important;
+}
+.fs10pt {
+	font-size:10pt !important;
+}
+.ft14pt {
+	font-size: 14pt !important;	
+}
+.edgeTbl td, ,edgeTbl th{
+	padding: 0;
+}
+.element.style {
+	border-bottom: 2px solid #0000;
+}
+.mb20{
+	margin-bottom: 20px !important;
+}
+.pb10 {
+	padding-bottom: 10px !important;
+}
+.fs20pt{
+	font-size: 20pt !important;
+}
+.font_ng{
+	font-family: 'Nanum Gothic' !important;
+	line-height: 170%;
+}
+.b{
+	font-weight: bold;
+}
+.fs14pt{
+	font-size: 14pt !important;
+}
+.gray666{
+	color: #666;
+}
+.p0{
+	padding: 0 !important;
+}
+/*
+HTML, BODY, TEXTAREA, INPUT, TABLE, TD, TH, TABLE, BUTTON, DIV, UL, LI, A, SPAN, SELECT, section, header, footer, aside,
+nav, article, h1, h2, h3, h4, h5, DD, DL, DT{
+	box-sizing: border-box;
+	outline: 0;
+}
+*/
+
+IMG {
+	border: 0;
+}
+#bodyChannelTitle{
+	font-family: 'Nanum Gothic';
+	font-size: 18pt;
+	padding-left: 60px;
+	background-image: url(../images/먹.JPG);
+	background-position: 20px 50%;
+	background-repeat: no-repeat;
+}
+P,DIV{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	font-size: 1em;
+}
+p{
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+.contents p {word-warp: break-word;}
+/*
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address,
+cite, code, del, dfn, em, ins, kbd, q, samp, small, strong,
+sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summart, time, mark,
+audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size:100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+*/
+*{
+	-webkit-text-size-adjust: none;
+}

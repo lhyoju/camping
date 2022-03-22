@@ -62,7 +62,7 @@ public class ResTestController {
 		List<ReservationVO> list = reservateService.reservateTest();
 
 		model.addAttribute("list", list);
-		return "/reservation/test";
+		return "reservation/test";
 	}
 	
 	@RequestMapping("/deletTest.do")
@@ -73,7 +73,7 @@ public class ResTestController {
 
 		model.addAttribute("list", list);
 		
-		return "/reservation/test";
+		return "reservation/test";
 	}
 	
 }

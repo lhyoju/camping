@@ -11,10 +11,10 @@
 <link href="/css/style.css" rel="stylesheet">
 ﻿<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>﻿
 <script>
-	function goPwdsearch() {
-	    if($.trim($('#userid').val())=="") {
-	        alert("아이디를 입력하세요!");
-	        $('#userid').val('').focus();
+	function goIdsearch() {
+	    if($.trim($('#name').val())=="") {
+	        alert("이름를 입력하세요!");
+	        $('#name').val('').focus();
 	        return;
 	    }
 	 
@@ -33,19 +33,11 @@
 			return;
 		}
 		
-		//비밀번호 찾기 ajax
-		$.ajax({
-			url : "/member/pwdsearch",
-			type : "POST",
-			data : {
-				userid : $("#userid").val(),
-				email : $("#email").val()
-			},
-			success : function(result) {
-				alert(result);
-			},
-		});
+	    document.userForm.action = "/member/idsearch";
+	    document.userForm.submit();
 	}
+	
+	
 	
 	//폼 입력시 폼 안에 글씨 사라지게 하기
 	jQuery(document).ready(function(){
@@ -64,7 +56,6 @@
 	});
 </script>
 
-
 </head>
 
 <body>
@@ -76,16 +67,16 @@
 			<form method="POST" action="" accept-charset="UTF-8"
 				class="form form-horizontal" name="userForm" id="userForm">
 				<input name="_token" type="hidden" value="">
-				<h3 class="login_new_title">비밀번호 찾기</h3>
+				<h3 class="login_new_title">아이디 찾기</h3>
 
 				<div class="login_box_new">
 
 					<div class="login">
 						<p class="input">
 							<label for="userid" style="display: block;">
-								<strong>아이디</strong>
+								<strong>이름</strong>
 							</label>
-							<input class="id_input" name="userid" id="userid" type="text" maxlength="20" value="" style="height:54px;">
+							<input class="id_input" name="name" id="name" type="text" maxlength="20" value="" style="height:54px;">
 						</p>
 						<p class="input">
 							<label for="name" style="display: block;">
@@ -95,7 +86,7 @@
 						</p>
 						
 						<div class="btn">
-							<a href="#비밀번호찾기" style="width: 235px;float:left;" onclick="javascript:goPwdsearch();">비밀번호 찾기</a>
+							<a href="#아이디찾기" style="width: 235px;float:left;" onclick="javascript:goIdsearch();">아이디 찾기</a>
 							<a href="/member/login" style="width: 235px;float:left;margin-left: 10px;">취소</a>
 						</div>
 

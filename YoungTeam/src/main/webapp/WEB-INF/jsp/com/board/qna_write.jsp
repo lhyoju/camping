@@ -14,12 +14,23 @@
 </head>
 <body>
 <%@ include file="../main/header.jsp"%>
+<div id="sub_visual">
+	<div class="sub_visual4">
+		<div class="sub_vis_inr wrap">
+			<h1>커뮤니티</h1>
+			<p>솔향기캠핑장에 오신것을 환영합니다.</p>
+		</div>
+	</div>
+</div>
+<div id="sub_container">
+	<div id="location"></div>
+	<div id="sub_con_inner" class="wrap">
 <div id="sub_contents">
 	<div id="title_container">
 		<div class="page_navi">
-			<span class="home"><a href="/">홈</a></span><span class="middle_n">커뮤니티</span><span>Q&A</span>
+			<span class="home"><a href="/">홈</a></span><span class="middle_n">커뮤니티</span><span>Q&amp;A</span>
 		</div>
-		<h1>Q&A 작성</h1>
+		<h1>Q&amp;A 작성</h1>
 	</div>
 	<div class="page" id="bbs_container">
 	<form method="post" action="qna_write_ok" accept-charset="UTF-8" class="form form-horizontal" name="qna_write_ok" id="qna_write_ok" onsubmit="return bw_check();">
@@ -65,6 +76,8 @@
 		<!-- <input type="hidden" name="user_id" value="admin"> -->
 	</form>
 	</div>
+</div>
+</div>
 </div>
 <%@ include file="../main/footer.jsp"%>
 </body>

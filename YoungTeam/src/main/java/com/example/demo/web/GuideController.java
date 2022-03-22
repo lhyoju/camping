@@ -6,24 +6,28 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class GuideController {
 	
-	@RequestMapping("/time_fare")
+	//이용시간 및 요금 안내 페이지
+	@RequestMapping("/guide/fare")
 	public String time_fare() {
-		return "/guide/time_fare";
+		return "guide/fare";
 	}
 	
-	@RequestMapping("/rulesUse")
+	//이용준수사항 안내 페이지
+	@RequestMapping("/guide/rules")
 	public String rulesUse() {
-		return "/guide/rulesUse";
+		return "guide/rules";
 	}
 	
-	@RequestMapping("/convenience")
+	//편의시설 안내 페이지
+	@RequestMapping("/guide/facility")
 	public String convenience() {
-		return "/guide/convenience";
+		return "guide/facility";
 	}
 	
-	@RequestMapping("/trafficInformation")
+	//위치 및 교통정보 안내 페이지
+	@RequestMapping("/guide/trafficInfo")
 	public String trafficInformation() {
-		return "/guide/trafficInformation";
+		return "guide/trafficInformation";
 	}
 
 }

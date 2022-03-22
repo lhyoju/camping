@@ -23,11 +23,7 @@
 <div id="sub_container">
 	<div id="location"></div>
 	<div id="sub_con_inner" class="wrap">
-		<div id="sidebar" class="pc">
-			<div class="submenu_title">
-				<h2><span>COMMUNITY</span>커뮤니티</h2>
-			</div>
-		</div>
+
 		<div id="sub_contents">
 			<div id="title_container">
 				<!-- 캠핑장 안내 -->
@@ -38,34 +34,30 @@
 			</div>
 			<div class="page" id="bbs_container">
 				<div class="bbs_read">
-	  				<h4><span>title</span></h4>
+	  				<h4><span>${b.board_title}</span></h4>
 	  				<table summary="게시판 읽기에 대해 작성일, 조회, 첨부, 내용 순으로 보실 수 있습니다.">
 						<caption>게시판 읽기</caption>
 						<colgroup>
-							<col width="15%">
-							<col width="35%">
-							<col width="15%">
-							<col width="35%">
+							<col width="10%">
+							<col width="25%">
+							<col width="10%">
+							<col width="25%">
+							<col width="10%">
+							<col width="20%">
 						</colgroup>
 						<thead>
-			  				<tr>
-								<th scope="col">제목</th>
-								<td colspan="3">${b.board_title}</td>
-			  				</tr>
 							<tr>
+								<th scope="col">작성자</th>
+								<td>${b.board_name}</td>
 								<th scope="col">작성일</th>
 								<td>${b.board_date}</td>
 								<th scope="col">조회</th>
 								<td>${b.board_hit}</td>
 							</tr>
-			  				<tr>
-								<th scope="col">작성자</th>
-								<td colspan="3">${b.board_name}</td>
-			  				</tr>
 						</thead>
 						<tbody>
 		  					<tr>
-								<td colspan="4" class="bbscon"><span>${b.board_cont}</span></td>
+								<td colspan="6" class="bbscon"><span>${b.board_cont}</span></td>
 		 					</tr>
 						</tbody>
 	  				</table>

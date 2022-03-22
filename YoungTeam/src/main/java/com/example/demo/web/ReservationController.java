@@ -54,7 +54,7 @@ public class ReservationController {
 
 		List<ResDateManVO> list = reservateService.resDateManSel();
 		model.addAttribute("list", list);
-		return "/reservation/reservation";
+		return "reservation/reservation";
 	}
 
 	@RequestMapping("/reservation2")
@@ -63,12 +63,12 @@ public class ReservationController {
 
 		List<MemberVO> list = reservateService.resSelNP(userid);
 		model.addAttribute("list", list);
-		return "/reservation/reservation2";
+		return "reservation/reservation2";
 	}
 
 	@RequestMapping("/pay")
 	public String pay() {
-		return "/reservation/pay";
+		return "reservation/pay";
 	}
 
 	@RequestMapping("/vbank")
@@ -162,7 +162,7 @@ public class ReservationController {
 			vo4.setResstatus(1);
 			reservateService.resDatemanIns(vo4);
 		}
-		return "/reservation/vbankPay";
+		return "reservation/vbankPay";
 
 
 
@@ -206,11 +206,11 @@ public class ReservationController {
 			mv.addObject("find_field",find_field);
 			mv.addObject("find_name", find_name);
 			mv.addObject("rescount", rescount);
-			mv.setViewName("/reservation/confirm");
+			mv.setViewName("reservation/confirm");
 
 		}else {
 
-			mv.setViewName("/reservation/confirm");
+			mv.setViewName("reservation/confirm");
 		}
 		return mv;
 	}
@@ -407,7 +407,7 @@ public class ReservationController {
 		List<ResDateManVO> list = reservateService.resDateManSel();
 		model.addAttribute("list", list);
 
-		return "/reservation/reservation";
+		return "reservation/reservation";
 	}
 
 
@@ -459,7 +459,7 @@ public class ReservationController {
 		mv.addObject("rescount",rescount);	
 		mv.addObject("find_field",find_field);
 		mv.addObject("find_name", find_name);
-		mv.setViewName("/reservation/admin");
+		mv.setViewName("reservation/admin");
 		return mv;
 	}
 }

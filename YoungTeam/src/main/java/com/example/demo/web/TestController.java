@@ -25,7 +25,7 @@ public class TestController {
 		List<ReservationVO> list = reservateService.reservateTest();
 
 		model.addAttribute("list", list);
-		return "/reservation/test";
+		return "reservation/test";
 	}
 
 	

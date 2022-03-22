@@ -12,7 +12,7 @@
 <link href="/css/sub.css" rel="stylesheet">
 <link href="/css/board.css" rel="stylesheet">
 ﻿<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="/js/login/member.js">
+<script type="text/javascript" src="/js/login/register.js">
 </script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
@@ -47,13 +47,20 @@ function kakaopost() {
 			<div class="page_navi">
 				<span class="home"><a href="/">홈</a></span><span class="middle_n">멤버십</span><span>정보입력</span>
 			</div>
-			<h1>회원정보</h1>
+			<h1>정보입력</h1>
 
 		</div>
 		<div class="page sub_paged month_write" id="bbs_container">
-			<h3>회원정보수정</h3>
+			<div class="join_top03 member_porcess">
+				<ul>
+					<li><span>Step01</span>약관동의</li>
+					<li class="ag_on"><span>Step02</span>정보입력</li>
+					<li><span>Step03</span>가입완료</li>
+				</ul>
+			</div>
+			<h3>회원정보입력</h3>
 			<form method="POST" action="" accept-charset="UTF-8"
-				class="form form-horizontal" name="editForm" id="editForm">
+				class="form form-horizontal" name="writeForm" id="writeForm">
 				<input name="_token" type="hidden" value=""> <input
 					name="chkid" type="hidden" value="0"> <input
 					name="auth_gpin_virtualNo" type="hidden"> <input
@@ -77,10 +84,23 @@ function kakaopost() {
 							<tr>
 								<th scope="row"><label for="bbs_inp_title">아이디<span
 										class="red">*</span></label></th>
-								<td style="font-size: 13px; color: #777;"><input name="userid"
-									id="userid" title="" type="text" size="40" value="${m.userid}"
-									class="table_hundred" readonly>
-
+								<td style="font-size: 13px; color: #777;">
+									<input name="userid" id="userid" title="" type="text" size="40" value=""
+									class="table_hundred">
+									<!-- 아이디 중복 확인 여부 체크 -->
+									<input type="hidden" id="idDupCheck" value="N">
+								
+								<!--  
+								<button onclick="id_check(); return false;">중복확인</button>
+								
+								 아이디 중복 확인 메세지 띄우는 곳 
+								<span id="idcheck"></span>
+								-->
+								
+								<!-- 아이디 중복 확인 팝업 띄우기 -->
+								<button onclick="idCheckPop(); return false;">아이디 중복 확인</button>
+									
+								<br> * 아이디는 영문, 숫자 조합으로 5~15자 이내로 입력해주세요.</td>
 							</tr>
 							<tr>
 								<th scope="row"><label for="bbs_text_content">비밀번호<span
@@ -103,36 +123,36 @@ function kakaopost() {
 								<th scope="row"><label for="bbs_inp_name"><span
 										id="uname">회원이름</span><span class="red">*</span></label></th>
 								<td><input name="name" title="" id="name"
-									type="text" size="40" value="${m.name}" class="table_hundred" readonly></td>
+									type="text" size="40" value="" class="table_hundred"></td>
 							</tr>
 							<tr>
 								<th scope="row"><label for="bbs_inp_call">휴대전화<span
 										class="red">*</span></label></th>
-								<td><input type="text" name="uphone1" class="input_" id="uphone1"
-									size="4" maxlength="3" value="${m.uphone1}"
-									onkeyup="next_input(this,'3','uphone2')">- <input
+								<td><input type="text" name="uphone1" class="input_"
+									size="4" maxlength="3" value=""
+									onkeyup="next_input(this,'3','uphone2')" id="uphone1">- <input
 									type="text" name="uphone2" id="uphone2" class="input_" size="4"
-									maxlength="4" value="${m.uphone2}" onkeyup="next_input(this,'4','uphone3')">-
+									maxlength="4" value="" onkeyup="next_input(this,'4','uphone3')">-
 									<input type="text" name="uphone3" id="uphone3" class="input_" size="4"
-									maxlength="4" value="${m.uphone3}" onkeyup="next_input(this,'4','phone1')">
+									maxlength="4" value="" onkeyup="next_input(this,'4','phone1')">
 								</td>
 							</tr>
 							<tr>
 								<th scope="row"><label for="bbs_inp_linecall">전화번호</label></th>
 								<td><input type="text" name="phone1" id="phone1" class="input_"
-									size="4" maxlength="3" value="${m.phone1}"
+									size="4" maxlength="3" value=""
 									onkeyup="next_input(this,'3','phone2')">- <input
 									type="text" name="phone2" id="phone2" class="input_" size="4" maxlength="4"
-									value="${m.phone2}" onkeyup="next_input(this,'4','phone3')">- <input
+									value="" onkeyup="next_input(this,'4','phone3')">- <input
 									type="text" name="phone3" id="phone3" class="input_" size="4" maxlength="4"
-									value="${m.phone3}" onkeyup="next_input(this,'4','email')"></td>
+									value="" onkeyup="next_input(this,'4','email')"></td>
 							</tr>
 							<tr>
 								<th scope="row"><label for="bbs_inp_email">이메일</label><span class="red">*</span></th>
 								<td><input name="email" title="이메일을 입력하세요."
-									id="email" type="text" size="15" value="${m.email}">@ <input
+									id="email" type="text" size="15" value="">@ <input
 									name="email2" title="이메일을 입력하세요." id="email2" class="eamil_domain"
-									type="text" size="15" value="${m.email2}"> 
+									type="text" size="15" value=""> 
 									<select id="email_ex">
 										<c:forEach var="d" items="${domain}">
 											<c:if test="${d == '직접입력'}">
@@ -149,7 +169,7 @@ function kakaopost() {
 								<th scope="row" rowspan="4"><label for="bbs_inp_title"><span
                               id="addr">주소</span><span class="red">*</span></label></th>
                         <td><input name="zipcode" id="zipcode" title="" type="text"
-                           size="10" value="${m.zipcode}" readonly>
+                           size="10" value="" readonly>
                            <input type="button" value="우편번호" style="width: 80px;height:30px" onclick="kakaopost()"></td>
 
 							</tr>
@@ -158,11 +178,11 @@ function kakaopost() {
 							</tr>
 							<tr>
 								<td>주소 <input name="address" id="address" title="" type="text"
-									size="40" value="${m.address}" class="table_hundred" readonly=""></td>
+									size="40" value="" class="table_hundred" readonly=""></td>
 							</tr>
 							<tr>
 								<td>상세주소<input name="address2" id="address2" title=""
-									type="text" size="40" value="${m.address2}" class="table_hundred"></td>
+									type="text" size="40" value="" class="table_hundred"></td>
 							</tr>
 							
 						</tbody>
@@ -176,8 +196,7 @@ function kakaopost() {
 				<div class="bbs_btn_area">
 					<p class="bt_center">
 						<a href="/" class="cancle_btn">취소하기</a>
-						<a href="#" style="background-color:#A9A9A9;">탈퇴하기</a>
-						<a href="#" id="submit" onclick="javascript:edit_check();">수정하기</a>
+						<a href="#" id="submit" onclick="javascript:join_check();">가입하기</a>
 					</p>
 				</div>
 			</div>

@@ -29,7 +29,7 @@
                <div
                   style="opacity: 1; width: 1200px; transform: translate3d(0px, 0px, 0px);">
                   <div class="contents_menu" style="width: 230px;">
-                     <a href="/introduce"> <img src="/img/main_C1_icon01.png">
+                     <a href="/intro"> <img src="/img/main_C1_icon01.png">
                         <p>
                            캠핑장 소개 <br>
                            <span>INTRODUCE</span>
@@ -53,7 +53,7 @@
                      </a>
                   </div>
                   <div class="contents_menu" style="width: 230px;">
-                     <a href="/time_fare"> <img src="/img/main_C1_icon04.png">
+                     <a href="/guide/fare"> <img src="/img/main_C1_icon04.png">
                         <p>
                            요금안내 <br>
                            <span>FARE GUIDE</span>
@@ -61,7 +61,7 @@
                      </a>
                   </div>
                   <div class="contents_menu" style="width: 230px;">
-                     <a href="/trafficInformation"> <img src="/img/main_C1_icon05.png">
+                     <a href="/guide/trafficInfo"> <img src="/img/main_C1_icon05.png">
                         <p>
                            찾아오시는 길 <br>
                            <span>LOCATION</span>
@@ -88,7 +88,7 @@
                솔향기캠핑장 홈페이지에서<br />
                원하는 정보를 찾아보세요!
             </p>
-            <a href="/convenience">바로가기</a>
+            <a href="/intro/facilityInfo">바로가기</a>
          </div>
          <div class="online">
             <h2>온라인문의</h2>

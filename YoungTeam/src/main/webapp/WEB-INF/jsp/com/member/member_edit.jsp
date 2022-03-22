@@ -176,7 +176,7 @@ function kakaopost() {
 				<div class="bbs_btn_area">
 					<p class="bt_center">
 						<a href="/" class="cancle_btn">취소하기</a>
-						<a href="#" style="background-color:#A9A9A9;">탈퇴하기</a>
+						<a href="/member/delete" style="background-color:#A9A9A9;">탈퇴하기</a>
 						<a href="#" id="submit" onclick="javascript:edit_check();">수정하기</a>
 					</p>
 				</div>

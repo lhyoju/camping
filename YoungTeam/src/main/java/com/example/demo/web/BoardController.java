@@ -42,7 +42,7 @@ public class BoardController {
 			page=Integer.parseInt(request.getParameter("page"));
 		}
 		m.addAttribute("page", page);
-		return	"/board/board_write"; 
+		return	"board/board_write"; 
 	}
 	
 	@RequestMapping(value="/board_write_ok",method=RequestMethod.POST)
@@ -90,7 +90,7 @@ public class BoardController {
         listM.addObject("listcount",listcount);	
         listM.addObject("find_field",find_field);
         listM.addObject("find_name", find_name);
-        listM.setViewName("/board/board_list");
+        listM.setViewName("board/board_list");
 		return listM;
 	}
 
@@ -122,11 +122,11 @@ public class BoardController {
 			m.addAttribute("type",b.getBoarad_type());
 			
 			if(state.equals("cont")) {
-				return "/board/board_cont";
+				return "board/board_cont";
 			}else if(state.equals("edit")) {
-				return "/board/board_edit";
+				return "board/board_edit";
 			}else if(state.equals("reply")) {
-				return "/board/board_reply";
+				return "board/board_reply";
 			}else if(state.equals("delA")) {
 				if(request.getParameter("page") != null) {
 					page=Integer.parseInt(request.getParameter("page"));
@@ -177,7 +177,7 @@ public class BoardController {
 			page=Integer.parseInt(request.getParameter("page"));
 		}
 		m.addAttribute("page", page);
-		return	"/board/often_write"; 
+		return	"board/often_write"; 
 	}
 	
 	@RequestMapping(value="/often_write_ok",method=RequestMethod.POST)
@@ -209,7 +209,7 @@ public class BoardController {
 		b.setStartrow((page-1)*10+1);
 		b.setEndrow(b.getStartrow()+limit-1);
 		
-			List<BoardVO> blist=this.boardService.getBoardListOf(b);
+		List<BoardVO> blist=this.boardService.getBoardListOf(b);
 		
 		int maxpage=(int)((double)listcount/limit+0.95);
 		int startpage=(((int)((double)page/10+0.9))-1)*10+1;
@@ -225,7 +225,7 @@ public class BoardController {
         listM.addObject("listcount",listcount);	
         listM.addObject("find_field",find_field);
         listM.addObject("find_name", find_name);
-        listM.setViewName("/board/often_list");
+        listM.setViewName("board/often_list");
 		return listM;
 	}
 	
@@ -241,7 +241,7 @@ public class BoardController {
 			page=Integer.parseInt(request.getParameter("page"));
 		}
 		m.addAttribute("page", page);
-		return	"/board/qna_write"; 
+		return	"board/qna_write"; 
 	}
 	
 	@RequestMapping(value="/qna_write_ok",method=RequestMethod.POST)
@@ -288,7 +288,7 @@ public class BoardController {
         listM.addObject("listcount",listcount);	
         listM.addObject("find_field",find_field);
         listM.addObject("find_name", find_name);
-        listM.setViewName("/board/qna_list");
+        listM.setViewName("board/qna_list");
 		return listM;
 	}	
 	@RequestMapping("/board_reply_ok")
@@ -301,7 +301,7 @@ public class BoardController {
 		if(request.getParameter("page") != null) {
 			page=Integer.parseInt(request.getParameter("page"));			
 		}
-		this.boardService.replyBoard(rb);//
+		this.boardService.replyBoard(rb);
 	return "redirect:/qna_list?page="+page;
 	}
 }

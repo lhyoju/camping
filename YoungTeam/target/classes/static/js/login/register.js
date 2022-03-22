@@ -115,7 +115,7 @@ function join_check(){
 		return;
 	}
 	
-	document.writeForm.action = "/join_ok";
+	document.writeForm.action = "/member/register";
 	document.writeForm.submit();
 	
 }
@@ -196,16 +196,9 @@ function id_check(){
       });
 }
 
-//로그인 페이지 팝업
-function goLoginPop(){
-	var url = "/login";
-	var name = "login popup";
-	var option = "width = 550, height = 650, top = 100, left = 200, location = no";
-	window.open(url, name, option);
-}
-
+//아이디 중복확인 팝업
 function idCheckPop(){
-	var url = "/idCheckForm";
+	var url = "/member/idDupCheck";
 	var name = "idCheck popup";
 	var option = "width = 550, height = 400, top = 100, left = 200, location = no";
 	window.open(url, name, option);

@@ -12,7 +12,8 @@ phone varchar2(2500),
 carnum varchar2(2500),
 carkinds varchar2(2500),
 paymethod number(36),
-paystatus number(36)
+paystatus number(36),
+mid varchar2(2500)
 )
 
 

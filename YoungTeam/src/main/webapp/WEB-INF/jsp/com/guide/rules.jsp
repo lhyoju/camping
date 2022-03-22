@@ -14,9 +14,9 @@
    <%@ include file="../main/header.jsp"%>
    
    <div id="sub_visual">
-      <div class="sub_visual4">
+      <div class="sub_visual2">
          <div class="sub_vis_inr wrap">
-            <h1>이용준수사항</h1>
+            <h1>이용안내</h1>
             <p>솔향기캠핑장에 오신것을 환영합니다.</p>
          </div>
       </div>
@@ -32,11 +32,9 @@
             <div id="title_container">
                <!-- 캠핑장 안내 -->
                <div class="page_navi">
-                  <span class="home"><a href="">홈</a></span><span class="middle_n">이용안내
-                     </span><span>이용준수사항</span>
+                  <span class="home"><a href="">홈</a></span><span class="middle_n">이용안내</span><span>이용준수사항</span>
                </div>
                <h1>이용준수사항</h1>
-
             </div>
             
             <div class="list">

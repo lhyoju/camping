@@ -86,7 +86,7 @@ function edit_check(){
 		return;
 	}
 
-	document.editForm.action = "/member_edit_ok";
+	document.editForm.action = "/member/edit";
 	document.editForm.submit();
 	
 }
@@ -106,6 +106,6 @@ function del_check(){
 		 return false;
 	 }
 	 
-	document.delForm.action = "/member_del_ok";
+	document.delForm.action = "/member/delete";
 	document.delForm.submit();
 }

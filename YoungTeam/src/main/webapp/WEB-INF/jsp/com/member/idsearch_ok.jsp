@@ -31,7 +31,7 @@
 						</p>
 						
 						<div class="btn">
-							<a href="/member/login" style="width: 235px;float:left;" onclick="javascript:goPwdsearch();">로그인 하기</a>
+							<a href="/login" style="width: 235px;float:left;" onclick="javascript:goPwdsearch();">로그인 하기</a>
 							<a href="#" onclick="window.close();" style="width: 235px;float:left;margin-left: 10px;">닫기</a>
 						</div>
 

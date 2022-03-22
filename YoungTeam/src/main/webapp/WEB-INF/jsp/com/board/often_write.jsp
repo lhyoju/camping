@@ -14,6 +14,17 @@
 </head>
 <body>
 <%@ include file="../main/header.jsp"%>
+<div id="sub_visual">
+	<div class="sub_visual4">
+		<div class="sub_vis_inr wrap">
+			<h1>커뮤니티</h1>
+			<p>솔향기캠핑장에 오신것을 환영합니다.</p>
+		</div>
+	</div>
+</div>
+<div id="sub_container">
+	<div id="location"></div>
+	<div id="sub_con_inner" class="wrap">
 <div id="sub_contents">
 	<div id="title_container">
 		<div class="page_navi">
@@ -65,6 +76,8 @@
 		<!-- <input type="hidden" name="user_id" value="admin"> -->
 	</form>
 	</div>
+</div>
+</div>
 </div>
 <%@ include file="../main/footer.jsp"%>
 </body>

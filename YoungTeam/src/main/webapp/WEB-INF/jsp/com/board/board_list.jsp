@@ -25,11 +25,7 @@
 <div id="sub_container">
 	<div id="location"></div>
 	<div id="sub_con_inner" class="wrap">
-		<div id="sidebar" class="pc">
-			<div class="submenu_title">
-				<h2><span>COMMUNITY</span>커뮤니티</h2>
-			</div>
-		</div>
+
 		<div id="sub_contents">
 			<div id="title_container">
 				<!-- 캠핑장 안내 -->

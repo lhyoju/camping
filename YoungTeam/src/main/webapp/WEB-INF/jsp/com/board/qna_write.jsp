@@ -33,7 +33,7 @@
 		<h1>Q&amp;A 작성</h1>
 	</div>
 	<div class="page" id="bbs_container">
-	<form method="post" action="qna_write_ok" accept-charset="UTF-8" class="form form-horizontal" name="qna_write_ok" id="qna_write_ok" onsubmit="return bw_check();">
+	<form method="post" action="/board/qna/${userid}" accept-charset="UTF-8" class="form form-horizontal" name="qna_write_ok" id="qna_write_ok" onsubmit="return bw_check();">
 		<div class="bbs_write">
   			<fieldset>
     			<table summary="게시판 쓰기에 대해 제목, 작성자, 이메일, 비밀번호, 내용, 첨부 순으로 작성하실 수 있습니다.">
@@ -69,7 +69,7 @@
 			<div class="bbs_btn_area">
 				<p class="bt_right">
 					<button type="submit" class="bt_write" onclick="javascript:bw_check();">저장</button>
-	    			<button type="reset" class="bt_write" onclick="location='qna_list?page=${page}';">취소</button>
+	    			<button type="reset" class="bt_write" onclick="location='/board/qna?page=${page}';">취소</button>
 			    </p>
 			</div>
 		</div>

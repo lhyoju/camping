@@ -1,17 +1,18 @@
 package com.example.demo.vo;
 
 public class BoardVO {
-		private int board_no;
-		private String board_name;
-		private String board_title;
-		private String board_pwd;
-		private String board_cont;
-		private int board_hit;
-		private int board_ref;
-		private int board_step;
-		private int board_level;
-		private String board_date;
-		private String board_type;
+	
+		private int board_no; //게시물 번호
+		private String board_name; //작성자
+		private String board_title; //제목
+		private String board_pwd; //비번
+		private String board_cont; //내용
+		private int board_hit; //조회수
+		private int board_ref; //원본글과 답변글을 묶어주는 그룹번호
+		private int board_step; //원본글이면 0, 첫번째 답변글 1
+		private int board_level; //답변글 정렬 순서
+		private String board_date; //등록날짜
+		private String board_type; //게시판 유형
 		
 		//페이징 쪽나누기 관련변수
 	    private int startrow;//시작행 번호

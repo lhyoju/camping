@@ -28,9 +28,14 @@
 			<div id="title_container">
 				<!-- 캠핑장 안내 -->
 				<div class="page_navi">
-					<span class="home"><a href="/">홈</a></span><span class="middle_n">커뮤니티</span><span>게시판</span>
+					<span class="home"><a href="/">홈</a></span><span class="middle_n">커뮤니티</span>
+					<c:if test="${type eq 'A'}"><span>공지사항</span></c:if>
+					<c:if test="${type eq 'B'}"><span>자주하는질문</span></c:if>
+					<c:if test="${type eq 'C'}"><span>Q&amp;A</span></c:if>
 				</div>
-				<h1>게시판</h1>
+				<c:if test="${type eq 'A'}"><h1>공지사항</h1></c:if>
+				<c:if test="${type eq 'B'}"><h1>자주하는질문</h1></c:if>
+				<c:if test="${type eq 'C'}"><h1>Q&amp;A</h1></c:if>
 			</div>
 			<div class="page" id="bbs_container">
 				<div class="bbs_read">
@@ -68,34 +73,34 @@
 				<div class="bbs_bottom_wrap">
 					<div class="bbs_btn_area">
 	  					<p class="bt_left">
-	  						<c:if test="${type=='A'}"><a href="/board_list">글목록</a></c:if>
-	  						<c:if test="${type=='B'}"><a href="/often_list">글목록</a></c:if>
-	  						<c:if test="${type=='C'}"><a href="/qna_list">글목록</a></c:if>
+	  						<c:if test="${type=='A'}"><a href="/board/news">글목록</a></c:if>
+	  						<c:if test="${type=='B'}"><a href="/board/often">글목록</a></c:if>
+	  						<c:if test="${type=='C'}"><a href="/board/qna">글목록</a></c:if>
 	  					</p>
 	  					<p class="bt_right">
 		  					<c:if test="${auth=='admin'}">
 			  					<c:if test="${type=='C'}">
-			  						<button type="button" class="bt_write" onclick="location='board_cont?no=${b.board_no}&page=${page}&state=reply';">답변</button>
+			  						<button type="button" class="bt_write" onclick="location='/board/cont?no=${b.board_no}&page=${page}&state=reply';">답변</button>
 			  					</c:if>
 		  					</c:if>
 	  						<c:if test="${auth=='admin'}">
-		  						<button type="button" class="bt_write" onclick="location='board_cont?no=${b.board_no}&page=${page}&state=edit';">수정</button>
+		  						<button type="button" class="bt_write" onclick="location='/board/cont?no=${b.board_no}&page=${page}&state=edit';">수정</button>
 		  					</c:if>
 		  					<c:if test="${auth=='admin'}">
 			  					<c:if test="${type=='A'}">
-			  						<button type="button" class="bt_write" onclick="location='board_cont?no=${b.board_no}&page=${page}&state=delA';">삭제</button>
+			  						<button type="button" class="bt_write" onclick="location='/board/cont?no=${b.board_no}&page=${page}&state=delA';">삭제</button>
 			  					</c:if>
 			  					<c:if test="${type=='B'}">
-			  						<button type="button" class="bt_write" onclick="location='board_cont?no=${b.board_no}&page=${page}&state=delB';">삭제</button>
+			  						<button type="button" class="bt_write" onclick="location='/board/cont?no=${b.board_no}&page=${page}&state=delB';">삭제</button>
 								</c:if>
 								<c:if test="${type=='C'}">
-			  						<button type="button" class="bt_write" onclick="location='board_cont?no=${b.board_no}&page=${page}&state=delC';">삭제</button>
+			  						<button type="button" class="bt_write" onclick="location='/board/cont?no=${b.board_no}&page=${page}&state=delC';">삭제</button>
 			  					</c:if>
 							</c:if>
 							<c:if test="${type=='C'}">
 								<c:if test="${userid==b.board_name}">
-		  							<button type="button" class="bt_write" onclick="location='board_cont?no=${b.board_no}&page=${page}&state=delC';">삭제</button>
-		  							<button type="button" class="bt_write" onclick="location='board_cont?no=${b.board_no}&page=${page}&state=edit';">수정</button>
+		  							<button type="button" class="bt_write" onclick="location='/board/cont?no=${b.board_no}&page=${page}&state=delC';">삭제</button>
+		  							<button type="button" class="bt_write" onclick="location='/board/cont?no=${b.board_no}&page=${page}&state=edit';">수정</button>
 		  						</c:if>
 		  					</c:if>
 		  				</p>

@@ -11,6 +11,14 @@
 <link href="/css/sub.css" rel="stylesheet">
 <script type="text/javascript" src="/js/board/board.js"></script>
 <script type="text/javascript" src="/js/board/jquery.js"></script>
+<script>
+	$(document).ready(function(){ 
+		if(${auth!='admin'}){
+			alert('관리자만 접근할 수 있습니다.');
+			location.href='/';
+		}
+	});	
+</script>
 </head>
 <body>
 <%@ include file="../main/header.jsp"%>
@@ -33,7 +41,7 @@
 		<h1>자주묻는질문 작성</h1>
 	</div>
 	<div class="page" id="bbs_container">
-	<form method="post" action="often_write_ok" accept-charset="UTF-8" class="form form-horizontal" name="often_write_ok" id="often_write_ok" onsubmit="return bw_check();">
+	<form method="post" action="/board/often/${userid}" accept-charset="UTF-8" class="form form-horizontal" name="often_write_ok" id="often_write_ok" onsubmit="return bw_check();">
 		<div class="bbs_write">
   			<fieldset>
     			<table summary="게시판 쓰기에 대해 제목, 작성자, 이메일, 비밀번호, 내용, 첨부 순으로 작성하실 수 있습니다.">
@@ -69,11 +77,10 @@
 			<div class="bbs_btn_area">
 				<p class="bt_right">
 					<button type="submit" class="bt_write" onclick="javascript:bw_check();">저장</button>
-	    			<button type="reset" class="bt_write" onclick="location='often_list?page=${page}';">취소</button>
+	    			<button type="reset" class="bt_write" onclick="location='/board/often?page=${page}';">취소</button>
 			    </p>
 			</div>
 		</div>
-		<!-- <input type="hidden" name="user_id" value="admin"> -->
 	</form>
 	</div>
 </div>

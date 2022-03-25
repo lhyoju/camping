@@ -25,12 +25,16 @@ import com.example.demo.vo.MemberVO;
 
 @Controller
 public class MemberController {
-
-	@Autowired
+	
 	private MemberService memberService;
 
-	@Autowired
 	private PasswordEncoder passwordEncoder;
+	
+	@Autowired
+	public MemberController(MemberService memberService, PasswordEncoder passwordEncoder) {
+		this.memberService = memberService;
+		this.passwordEncoder = passwordEncoder;
+	}
 
 	//로그인 폼
 	@GetMapping("/member/login")

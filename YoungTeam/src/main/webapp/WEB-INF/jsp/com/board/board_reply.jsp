@@ -11,6 +11,14 @@
 <link href="/css/sub.css" rel="stylesheet">
 <script type="text/javascript" src="/js/board/board.js"></script>
 <script type="text/javascript" src="/js/board/jquery.js"></script>
+<script>
+	$(document).ready(function(){ 
+		if(${auth!='admin'}){
+			alert('관리자만 접근할 수 있습니다.');
+			location.href='/';
+		}
+	});	
+</script>
 </head>
 <body>
 <%@ include file="../main/header.jsp"%>
@@ -28,12 +36,12 @@
 <div id="sub_contents">
 	<div id="title_container">
 		<div class="page_navi">
-			<span class="home"><a href="/">홈</a></span><span class="middle_n">커뮤니티</span><span>Q&amp;A 답변작성</span>
+			<span class="home"><a href="/">홈</a></span><span class="middle_n">커뮤니티</span><span>Q&amp;A</span>
 		</div>
-		<h1>Q&amp;A 답변작성</h1>
+		<h1>Q&amp;A 답변 작성</h1>
 	</div>
 	<div class="page" id="bbs_container">
-	<form method="post" action="board_reply_ok" accept-charset="UTF-8" class="form form-horizontal" name="board_reply_ok" id="board_reply_ok" onsubmit="return bw_check();">
+	<form method="post" action="/board/qna/reply" accept-charset="UTF-8" class="form form-horizontal" name="board_reply_ok" id="board_reply_ok" onsubmit="return bw_check();">
 	<input type="hidden" name="board_ref" value="${b.board_ref}" />
 	<input type="hidden" name="board_step" value="${b.board_step}" />
 	<input type="hidden" name="board_level" value="${b.board_level}" />
@@ -74,11 +82,10 @@
 			<div class="bbs_btn_area">
 				<p class="bt_right">
 					<button type="submit" class="bt_write" onclick="javascript:bw_check();">저장</button>
-	    			<button type="reset" class="bt_write" onclick="location='qna_list?page=${page}';">취소</button>
+	    			<button type="reset" class="bt_write" onclick="location='/board/qna?page=${page}';">취소</button>
 			    </p>
 			</div>
 		</div>
-		<!-- <input type="hidden" name="user_id" value="admin"> -->
 	</form>
 	</div>
 </div>

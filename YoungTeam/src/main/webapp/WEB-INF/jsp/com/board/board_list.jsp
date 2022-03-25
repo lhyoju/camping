@@ -13,7 +13,7 @@
 </head>
 <body>
 <%@ include file="../main/header.jsp"%>
-<form method="get" action="board_list">
+<form method="get" action="/board/news">
 <div id="sub_visual">
 	<div class="sub_visual4">
 		<div class="sub_vis_inr wrap">
@@ -75,7 +75,7 @@
 								<c:forEach var="b" items="${blist}">
 									<tr class="notice">
 										<td class="lc01"><img src="/img/ico_notice.gif">${b.board_no}</td>
-										<td class="lc03"><a href="/board_cont?no=${b.board_no}&page=${page}&state=cont">${b.board_title}</a></td>
+										<td class="lc03"><a href="/board/cont?no=${b.board_no}&page=${page}&state=cont">${b.board_title}</a></td>
 										<td class="lc04">${b.board_name}</td>
 										<td class="lc05">${b.board_date}</td>
 										<td class="lc06">${b.board_hit}</td>
@@ -95,29 +95,29 @@
 						<div class="pageing">
 							<c:if test="${(empty find_field) && (empty find_name)}">
 								<c:if test="${page<=1}"><a href="">&lt;</a></c:if>
-								<c:if test="${page>1}"><a href="board_list?page=${page-1}">&lt;</a></c:if>
+								<c:if test="${page>1}"><a href="/board/news?page=${page-1}">&lt;</a></c:if>
 								<c:forEach var="a" begin="${startpage}" end="${endpage}" step="1">
 									<c:if test="${a == page}"><strong><a>${a}</a></strong></c:if>
-									<c:if test="${a != page}"><a href="board_list?page=${a}">${a}</a></c:if>
+									<c:if test="${a != page}"><a href="/board/news?page=${a}">${a}</a></c:if>
 								</c:forEach>
 								<c:if test="${page >= maxpage}"><a href="">&gt;</a></c:if>
-								<c:if test="${page<maxpage}"><a href="board_list?page=${page+1}">&gt;</a></c:if>
+								<c:if test="${page<maxpage}"><a href="/board/news?page=${page+1}">&gt;</a></c:if>
 							</c:if>
 							<c:if test="${(!empty find_field) || (!empty find_name)}">
 								<c:if test="${page<=1}"><a href="">&lt;</a></c:if>
-								<c:if test="${page>1}"><a href="board_list?page=${page-1}&find_field=${find_field}&find_name=${find_name}">&lt;</a>&nbsp;</c:if>
+								<c:if test="${page>1}"><a href="/board/news?page=${page-1}&find_field=${find_field}&find_name=${find_name}">&lt;</a>&nbsp;</c:if>
 								<c:forEach var="a" begin="${startpage}" end="${endpage}" step="1">
 									<c:if test="${a == page}"><strong><a>${a}</a></strong></c:if>
-									<c:if test="${a != page}"><a href="board_list?page=${a}&find_field=${find_field}&find_name=${find_name}">${a}</a></c:if>
+									<c:if test="${a != page}"><a href="/board/news?page=${a}&find_field=${find_field}&find_name=${find_name}">${a}</a></c:if>
 								</c:forEach>
 								<c:if test="${page >= maxpage}"><a href="">&gt;</a></c:if>
-								<c:if test="${page<maxpage}"><a href="board_list?page=${page+1}&find_field=${find_field}&find_name=${find_name}">&gt;</a></c:if>
+								<c:if test="${page<maxpage}"><a href="/board/news?page=${page+1}&find_field=${find_field}&find_name=${find_name}">&gt;</a></c:if>
 							</c:if>
 						</div>
 					</div>
 					<c:if test="${auth=='admin'}">
 						<div class="bbs_btn_area">
-							<p class="bt_right"><a href="/board_write" class="bt_write">글쓰기</a></p>
+							<p class="bt_right"><a href="/board/news/${userid}" class="bt_write">글쓰기</a></p>
 						</div>
 					</c:if>
 				</div>

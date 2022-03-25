@@ -28,12 +28,18 @@
 <div id="sub_contents">
 	<div id="title_container">
 		<div class="page_navi">
-			<span class="home"><a href="/">홈</a></span><span class="middle_n">커뮤니티</span><span>공지사항 작성</span>
+			<span class="home"><a href="/">홈</a></span><span class="middle_n">커뮤니티</span>
+			<c:if test="${type eq 'A'}"><span>공지사항</span></c:if>
+			<c:if test="${type eq 'B'}"><span>자주하는질문</span></c:if>
+			<c:if test="${type eq 'C'}"><span>Q&amp;A</span></c:if>
+			
 		</div>
-		<h1>공지사항 작성</h1>
+		<c:if test="${type eq 'A'}"><h1>공지사항 작성</h1></c:if>
+		<c:if test="${type eq 'B'}"><h1>자주하는질문 작성</h1></c:if>
+		<c:if test="${type eq 'C'}"><h1>Q&amp;A 작성</h1></c:if>
 	</div>
 	<div class="page" id="bbs_container">
-	<form method="post" action="board_edit_ok" accept-charset="UTF-8" class="form form-horizontal" name="board_edit_ok" id="board_edit_ok" onsubmit="return bw_check();">
+	<form method="post" action="/board/edit" accept-charset="UTF-8" class="form form-horizontal" name="board_edit_ok" id="board_edit_ok" onsubmit="return bw_check();">
 	<input type="hidden" name="board_no" value="${b.board_no}" />
 	<input type="hidden" name="page" value="${page}" />
 		<div class="bbs_write">
@@ -70,11 +76,13 @@
 			<div class="bbs_btn_area">
 				<p class="bt_right">
 					<button type="submit" class="bt_write">저장</button>
-	    			<button type="reset" class="bt_write" onclick="location='board_list?page=${page}';">취소</button>
+					<c:if test="${type eq 'A'}"><button type="reset" class="bt_write" onclick="location='/board/news?page=${page}';">취소</button></c:if>
+					<c:if test="${type eq 'B'}"><button type="reset" class="bt_write" onclick="location='/board/often?page=${page}';">취소</button></c:if>
+					<c:if test="${type eq 'C'}"><button type="reset" class="bt_write" onclick="location='/board/qna?page=${page}';">취소</button></c:if>
+	    			
 			    </p>
 			</div>
 		</div>
-		<!-- <input type="hidden" name="user_id" value="admin"> -->
 	</form>
 	</div>
 </div>

@@ -3,15 +3,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-
 <head>
-
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
 <script type="text/javascript" src="/js/main/login.js">
 </script>
-
 </head>
 
 <body>
@@ -82,11 +78,11 @@
 							<li><a href="/tour/play">주변 즐길거리</a></li>
 							<li><a href="/tour/eat">주변 먹거리</a></li>
 						</ul></li>
-					<li><a href="#">커뮤니티</a>
+					<li><a href="/board/news">커뮤니티</a>
 						<ul id="sub-menu">
-							<li><a href="/board_list">공지사항</a></li>
-							<li><a href="/often_list">자주하는 질문</a></li>
-							<li><a href="/qna_list">Q&A</a></li>
+							<li><a href="/board/news">공지사항</a></li>
+							<li><a href="/board/often">자주하는 질문</a></li>
+							<li><a href="/board/qna">Q&amp;A</a></li>
 						</ul></li>
 				</ul>
 			</nav>

@@ -2,8 +2,7 @@ package com.example.demo.service;
 
 import java.util.List;
 
-import javax.inject.Inject;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.dao.BoardDAO;
@@ -12,8 +11,12 @@ import com.example.demo.vo.BoardVO;
 @Service
 public class BoardServiceImpl implements BoardService {
 
-	@Inject
 	private BoardDAO boardDAO;
+	
+	@Autowired
+	public BoardServiceImpl(BoardDAO boardDAO) {
+		this.boardDAO = boardDAO;
+	}
 	
 	@Override
 	public void insertBoardGo(BoardVO b) {

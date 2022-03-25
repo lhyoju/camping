@@ -1,38 +1,19 @@
 package com.example.demo.web;
 
-
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-
 import java.util.List;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.json.simple.JSONObject;
-import org.springframework.core.ParameterizedTypeReference;
-
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.service.ReservateService;
@@ -44,14 +25,15 @@ import com.example.demo.vo.ReservationVO;
 @Controller
 public class ReservationController {
 
-	@Resource(name = "reservateTest")
 	private ReservateService reservateService;
+	
+	@Autowired
+	public ReservationController(ReservateService reservateService) {
+		this.reservateService = reservateService;
+	}
 
 	@RequestMapping("/reservation")
 	public String reservation(Model model) {
-
-
-
 		List<ResDateManVO> list = reservateService.resDateManSel();
 		model.addAttribute("list", list);
 		return "reservation/reservation";

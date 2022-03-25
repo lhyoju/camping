@@ -13,16 +13,17 @@ import com.example.demo.vo.ReservationVO;
 
 @Service("reservateTest")
 public class ReservateServiceImpl implements ReservateService {
-	
-	
+
+	private ReservateDAO reservateDAO;
 	
 	@Autowired
-	private ReservateDAO reservateDAO;
+	public ReservateServiceImpl(ReservateDAO reservateDAO) {
+		this.reservateDAO = reservateDAO;
+	}
 	
 	@Override
 	@Transactional
 	public List<ReservationVO> reservateTest() {
-
 		return reservateDAO.reservateTest();
 	}
 	
@@ -45,6 +46,7 @@ public class ReservateServiceImpl implements ReservateService {
 	public List<ResDateManVO> resDateManSel(){
 		return reservateDAO.resDateManSel();
 	}
+	
 	public void resDatemanIns(ResDateManVO vo) {
 		reservateDAO.resDatemanIns(vo);
 	}

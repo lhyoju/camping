@@ -12,14 +12,18 @@ import org.springframework.stereotype.Service;
 import com.example.demo.dao.MemberDAO;
 import com.example.demo.vo.MemberVO;
 
-@Service("MemberService")
+@Service
 public class MemberServiceImpl implements MemberService {
 
-	@Autowired
 	private MemberDAO memberDao;
 	
-	@Autowired
 	private PasswordEncoder passwordEncoder;
+	
+	@Autowired
+	public MemberServiceImpl(MemberDAO memberDao, PasswordEncoder passwordEncoder) {
+		this.memberDao = memberDao;
+		this.passwordEncoder = passwordEncoder;
+	}
 
 	@Override
 	public MemberVO login(String userid) {
